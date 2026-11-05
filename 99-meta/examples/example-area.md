@@ -38,7 +38,6 @@ Out: application code and data platform work, which have their own areas.
 - [Private endpoint DNS for Databricks](../01-notes/01a-atomic/private-endpoint-dns-for-databricks.md): the case that showed DNS is the hard part
 - [Private endpoint zone per service](../01-notes/01a-atomic/private-endpoint-zone-per-service.md): the general rule behind every case
 - [Private Link DNS zones](../04-resources/04p-pages/private-link-dns-zones.md): the zone name for each service
-
 - [Hub-and-spoke network topology](../04-resources/04p-pages/hub-and-spoke-network-topology.md): the captured post that shaped our network layout
 
 ## Infrastructure as code

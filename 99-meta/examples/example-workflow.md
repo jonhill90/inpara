@@ -44,7 +44,7 @@ The area and its map of content are the same note.
 
 ## Week 2: a project emerges
 
-The map's pattern points at a clear outcome: automate private endpoint DNS once. That becomes `02-projects/private-endpoint-module.md` ([example](example-project.md)), a map note linking the notes and the zone list it uses. Its design and progress log go in `02-projects/private-endpoint-module/`. The area map links the project.
+The map's pattern points at a clear outcome: automate private endpoint DNS once. That becomes `02-projects/private-endpoint-module.md` ([example](example-project.md)), a map note linking the notes and the captured zone page it uses. Its design and progress log go in `02-projects/private-endpoint-module/`. The area map links the project.
 
 ## Month 2: resources grow
 
