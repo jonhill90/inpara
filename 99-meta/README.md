@@ -2,7 +2,7 @@
 title: Meta
 description: How INPARA works: the organization standard, guides, templates and worked examples.
 status: current
-date: 2026-11-05
+date: 2025-06-08
 ---
 
 # Meta

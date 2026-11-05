@@ -2,7 +2,7 @@
 title: INPARA formatting standards
 description: Front matter, headings and link rules for every INPARA file, in plain Markdown that works in any tool.
 status: current
-date: 2026-11-05
+date: 2025-06-08
 ---
 
 # INPARA formatting standards
@@ -18,7 +18,7 @@ Every main file starts with the same four fields:
 
 ```yaml
 ---
-title: Private endpoint DNS zone for Databricks
+title: Private endpoint DNS zone
 description: Why a Databricks workspace behind a private endpoint needs its own private DNS zone, and how to link it.
 status: draft | current | replaced
 date: 2026-11-05

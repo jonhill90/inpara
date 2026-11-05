@@ -1,11 +1,11 @@
 ---
-title: Example area map
+title: Example area
 description: A worked area map for cloud infrastructure, showing how an INPARA area is its own map of content.
 status: current
-date: 2026-11-05
+date: 2025-06-08
 ---
 
-# Example area map
+# Example area
 
 Saved as `03-areas/cloud-infrastructure.md`. The area and its map of content are one note.
 
@@ -35,9 +35,11 @@ Out: application code and data platform work, which have their own areas.
 
 ## Private connectivity
 
-- [Private endpoint DNS for Databricks](../01-notes/01a-atomic/private-endpoint-dns-databricks.md): the case that showed DNS is the hard part
-- [Private endpoints need a zone per service](../01-notes/01a-atomic/private-endpoint-zone-per-service.md): the general rule behind every case
-- [Private Link DNS zone list](../04-resources/04p-pages/private-link-dns-zones.md): the zone name for each service
+- [Private endpoint DNS for Databricks](../01-notes/01a-atomic/private-endpoint-dns-for-databricks.md): the case that showed DNS is the hard part
+- [Private endpoint zone per service](../01-notes/01a-atomic/private-endpoint-zone-per-service.md): the general rule behind every case
+- [Private Link DNS zones](../04-resources/04p-pages/private-link-dns-zones.md): the zone name for each service
+
+- [Hub-and-spoke network topology](../04-resources/04p-pages/hub-and-spoke-network-topology.md): the captured post that shaped our network layout
 
 ## Infrastructure as code
 
@@ -49,7 +51,7 @@ Out: application code and data platform work, which have their own areas.
 
 ## Projects
 
-- [Private endpoint module](../02-projects/private-endpoint-module.md): finished; a reusable module that creates endpoints and their DNS together
+None active.
 
 ## Patterns and open questions
 
@@ -65,9 +67,13 @@ Out: application code and data platform work, which have their own areas.
 ## Related areas
 
 - [Platform engineering](platform-engineering.md): shares the automation and self-service work
+
+## Finished
+
+- [Private endpoint module](../02-projects/private-endpoint-module.md): delivered a reusable module that creates endpoints and their DNS together
 ````
 
 What to notice:
 - The map holds no material of its own: each line is a link and a reason.
 - The notes, the captured page and the project all live in their own folders; this map is how a person finds them.
-- The finished project stays linked, and its own map says `status: replaced`.
+- The finished project stays linked under Finished, and its own map says `status: replaced`.

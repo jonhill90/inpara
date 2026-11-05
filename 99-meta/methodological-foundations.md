@@ -2,7 +2,7 @@
 title: Methodological foundations
 description: The six methods INPARA draws on (GTD, PARA, LYT, Zettelkasten, MOCs, BASB) and what it takes from each.
 status: current
-date: 2026-11-05
+date: 2025-06-08
 ---
 
 # Methodological Foundations
@@ -87,7 +87,7 @@ Rather than choosing one methodology, INPARA combines their strengths:
 
 Maps of content and areas do the same job, so in INPARA an area **is** its map. The rest follows from one rule, one home per file:
 
-- Folders are `NN-name`, with lettered second-level folders (`01a-atomic`) inside Notes and Resources, at most three levels deep.
+- Folders are `NN-name`, with lettered second-level folders (`01a-atomic`) inside Inbox, Notes and Resources.
 - Names are a slug of the title, with no timestamps or IDs, and never change after saving.
 - Finished work stays where it is with `status: replaced`.
 - Every note and resource is linked from at least one area or project map, and checks keep that true.

@@ -2,7 +2,7 @@
 title: Notes
 description: What we wrote ourselves: atomic notes, daily logs, handbook pages, research and samples.
 status: current
-date: 2026-11-05
+date: 2025-06-08
 ---
 
 # Notes

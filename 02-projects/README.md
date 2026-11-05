@@ -2,7 +2,7 @@
 title: Projects
 description: Work that will end; one map note per project, with its plans in a folder of the same name.
 status: current
-date: 2026-11-05
+date: 2025-06-08
 ---
 
 # Projects

@@ -1,11 +1,11 @@
 ---
-title: AI integration guide for INPARA
+title: AI integration
 description: How agents and AI tools work in an INPARA store: the wizard before saving, maps kept complete, checks in CI, and people deciding.
 status: current
-date: 2026-11-05
+date: 2025-06-08
 ---
 
-# AI Integration Guide for INPARA
+# AI integration
 
 How to enhance an INPARA store with agents, AI tools and automation, while keeping the bottom-up emergence principles.
 
@@ -59,6 +59,7 @@ Hand-kept lists go stale; checks keep them complete. CI runs the knowledge store
 
 | Check | Fails when |
 |---|---|
+| root | the root holds anything but the top folders, the root files and dot files |
 | names | a name breaks the naming rule |
 | links | a relative link points to nothing |
 | orphans | no chain of links from `README.md` reaches a file |
@@ -74,6 +75,11 @@ Hand-kept lists go stale; checks keep them complete. CI runs the knowledge store
 3. **Add suggestions.** Links and placements you accept or reject.
 4. **Automate what the checks can verify.** Keep the rest as suggestions.
 
+### Tool categories
+- **Semantic search:** embeddings and vector search to find related notes before writing a new one
+- **Language processing:** entity extraction, summarization and link suggestions
+- **Automation platforms:** workflow tools or small scripts that run capture and checks
+
 ### Tool selection criteria
 - **Respects your data.** Local-first or privacy-conscious.
 - **Plain files.** Works on Markdown folders, so the store outlives the tool.
@@ -83,6 +89,8 @@ Hand-kept lists go stale; checks keep them complete. CI runs the knowledge store
 ### Privacy considerations
 - Local processing when possible
 - Selective sharing with cloud AI services
+- Anonymize sensitive content before it reaches a cloud service
+- Keep data exportable as plain files, so no vendor holds it
 - Keep work and personal stores separate
 
 ## Best practices

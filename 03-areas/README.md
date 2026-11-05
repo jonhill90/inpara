@@ -2,7 +2,7 @@
 title: Areas
 description: Subjects that never end; each area is one map-of-content note linking the notes, resources and projects it uses.
 status: current
-date: 2026-11-05
+date: 2025-06-08
 ---
 
 # Areas

@@ -1,11 +1,11 @@
 ---
-title: Example workflow over three months
+title: Example workflow
 description: One subject followed through INPARA for three months, from inbox captures to atomic notes, an area map, a project and a finished project.
 status: current
-date: 2026-11-05
+date: 2025-06-08
 ---
 
-# Example workflow over three months
+# Example workflow
 
 A concrete example of knowledge moving through INPARA. The subject is cloud infrastructure work; the same flow fits any subject.
 
@@ -28,7 +28,7 @@ Each capture goes through the wizard in [ORGANIZE.md](../ORGANIZE.md), first yes
 
 | Capture | Wizard answer | Saved as |
 |---|---|---|
-| Databricks DNS issue | 6: we wrote it, one idea | `01-notes/01a-atomic/private-endpoint-dns-databricks.md` ([example](example-note.md)) |
+| Databricks DNS issue | 6: we wrote it, one idea | `01-notes/01a-atomic/private-endpoint-dns-for-databricks.md` ([example](example-note.md)) |
 | "Private endpoint not accessible" | 0: same subject as the note above | added to that note, not a new file |
 | Terraform state corruption | 6: one idea | `01-notes/01a-atomic/recovering-corrupted-terraform-state.md` |
 | Hybrid server management | 6: one idea | `01-notes/01a-atomic/hybrid-server-management-options.md` |
@@ -56,7 +56,7 @@ The module ships. Nothing moves:
 
 - the project map stays at `02-projects/private-endpoint-module.md`, with `status: replaced` and an Outcome section
 - the lesson about testing becomes an atomic note, linked from the project and the area
-- the area map moves the project link under its finished projects, with the outcome as the reason
+- the area map moves the project link to its Finished section, with the outcome as the reason
 
 No link broke, and git keeps every earlier version.
 

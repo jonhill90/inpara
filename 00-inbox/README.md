@@ -2,7 +2,7 @@
 title: Inbox
 description: Captured but not sorted yet; emptied daily with the wizard in ORGANIZE.md.
 status: current
-date: 2026-11-05
+date: 2025-06-08
 ---
 
 # Inbox

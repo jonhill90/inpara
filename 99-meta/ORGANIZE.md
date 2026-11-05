@@ -224,12 +224,14 @@ This repository is a store at its root. It adopted the standard with
 the agent rules in `AGENTS.md`, and the CI check in
 `.github/workflows/knowledge-check.yml`, which runs the script pinned by
 commit from the public `jonhill90/skills` repository, so a pull request
-cannot edit its own checker.
+cannot edit its own checker. This repository keeps every top folder with
+its hub from the start, because the hubs are the folder guides.
 
 To use INPARA somewhere else, such as an Obsidian vault or a code
-repository's `docs/knowledge/`, copy the top folders with their hub
-`README.md` files and this file into `99-meta/`. Create each lettered
-folder when its first file arrives.
+repository's `docs/knowledge/`, start with `README.md`, this file in
+`99-meta/` and the hub `99-meta/README.md`. Create each other top folder,
+with its hub `README.md` copied from here, and each lettered folder, when
+its first file arrives.
 
 To leave the standard, delete `99-meta/ORGANIZE.md`: the check then treats
 the folder as not a store. Nothing else depends on it.

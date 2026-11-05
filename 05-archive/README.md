@@ -2,7 +2,7 @@
 title: Archive
 description: Records that arrived already finished, such as old snapshots or exports, kept unchanged.
 status: current
-date: 2026-11-05
+date: 2025-06-08
 ---
 
 # Archive

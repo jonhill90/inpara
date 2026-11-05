@@ -1,11 +1,11 @@
 ---
-title: Example project map
+title: Example project
 description: A worked project map for a private endpoint module, from planning to its outcome, with plans kept in the project folder.
 status: current
-date: 2026-11-05
+date: 2025-06-08
 ---
 
-# Example project map
+# Example project
 
 Saved as `02-projects/private-endpoint-module.md`, with its plans in `02-projects/private-endpoint-module/`. This is the map at the end of the project, after its status became `replaced`.
 
@@ -29,9 +29,9 @@ Manual DNS setup caused most private endpoint failures. Serves [Cloud infrastruc
 
 ## Uses
 
-- [Private endpoint DNS for Databricks](../01-notes/01a-atomic/private-endpoint-dns-databricks.md): the failure the module must prevent
-- [Private endpoints need a zone per service](../01-notes/01a-atomic/private-endpoint-zone-per-service.md): the rule the module encodes
-- [Private Link DNS zone list](../04-resources/04p-pages/private-link-dns-zones.md): the zone names the module maps
+- [Private endpoint DNS for Databricks](../01-notes/01a-atomic/private-endpoint-dns-for-databricks.md): the failure the module must prevent
+- [Private endpoint zone per service](../01-notes/01a-atomic/private-endpoint-zone-per-service.md): the rule the module encodes
+- [Private Link DNS zones](../04-resources/04p-pages/private-link-dns-zones.md): the zone names the module maps
 
 ## Plans and logs
 

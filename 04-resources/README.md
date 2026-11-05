@@ -2,7 +2,7 @@
 title: Resources
 description: What someone else made, captured to reference: web pages, documents and repositories.
 status: current
-date: 2026-11-05
+date: 2025-06-08
 ---
 
 # Resources

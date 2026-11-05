@@ -13,8 +13,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
-        with:
-          fetch-depth: 0
       - name: Knowledge store check
         env:
           # The checker comes from the public skills repository, pinned by commit,

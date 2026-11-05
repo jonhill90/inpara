@@ -1,11 +1,11 @@
 ---
-title: INPARA workflow guide
+title: Workflow guide
 description: Step-by-step daily, weekly and monthly use of INPARA, from capture to maps, projects and finished work.
 status: current
-date: 2026-11-05
+date: 2025-06-08
 ---
 
-# INPARA workflow guide
+# Workflow guide
 
 Step-by-step use of INPARA for bottom-up knowledge management. Placement and names come from the wizard in [ORGANIZE.md](ORGANIZE.md); this guide covers the rhythm.
 

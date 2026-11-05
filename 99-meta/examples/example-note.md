@@ -1,13 +1,13 @@
 ---
-title: Example atomic note
+title: Example note
 description: A worked atomic note on private endpoint DNS, showing front matter, the Notes, Thoughts and Links headings, and links with reasons.
 status: current
-date: 2026-11-05
+date: 2025-06-08
 ---
 
-# Example atomic note
+# Example note
 
-Saved as `01-notes/01a-atomic/private-endpoint-dns-databricks.md`, from the title "Private endpoint DNS for Databricks". The links point at files the example store would hold, so they are shown inside a code block.
+Saved as `01-notes/01a-atomic/private-endpoint-dns-for-databricks.md`, from the title "Private endpoint DNS for Databricks" (five words, so all are kept). The links point at files the example store would hold, so they are shown inside a code block.
 
 ````markdown
 ---
@@ -33,12 +33,12 @@ DNS, not network topology, is the hard part of every private endpoint so far. A 
 
 ## Links
 
-- [Private endpoints need a zone per service](private-endpoint-zone-per-service.md): the general rule this case follows
-- [Private Link DNS zone list](../../04-resources/04p-pages/private-link-dns-zones.md): the captured page with every zone name
+- [Private endpoint zone per service](private-endpoint-zone-per-service.md): the general rule this case follows
+- [Private Link DNS zones](../../04-resources/04p-pages/private-link-dns-zones.md): the captured page with every zone name
 - [Private endpoint module](../../02-projects/private-endpoint-module.md): the project this note led to
 ````
 
 What to notice:
-- One idea: why the workspace fails and what fixes it. The zone list lives in a captured resource, and the general rule in its own note; both are linked, not copied.
+- One idea: why the workspace fails and what fixes it. The zone names live in a captured resource, and the general rule in its own note; both are linked, not copied.
 - The name is a slug of the title, never a timestamp.
 - The area map `03-areas/cloud-infrastructure.md` links this note (see [example-area.md](example-area.md)), so it is never an orphan.
