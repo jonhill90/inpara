@@ -1,89 +1,45 @@
-# INMPARA Knowledge Management System
+# INPARA Knowledge Management System
 
-**I**nbox → **N**otes → **M**OCs → **P**rojects → **A**reas → **R**esources → **A**rchive
+**I**nbox → **N**otes → **P**rojects → **A**reas → **R**esources → **A**rchive
 
 A bottom-up knowledge management system designed for autistic traits and bottom-up cognitive processing.
 
+Before saving, run the wizard in 99-meta/ORGANIZE.md; to find anything, follow the hub lists from here.
+
+## How INPARA is shaped
+
+Each area is one map of content, `03-areas/<area>.md`, and each project is one map note, `02-projects/<project>.md`. Notes and resources are the things themselves; maps link to them, each link with a reason. Names are a slug of the title, with no IDs or dates, and never change after saving. Finished work stays where it is with `status: replaced`.
+
 ## Philosophy
 
-INMPARA is engineered to match natural thinking patterns by:
+INPARA is engineered to match natural thinking patterns by:
 - Starting with atomic ideas rather than forcing categorization
 - Allowing structure to emerge organically
 - Minimizing cognitive friction in the capture-to-action pipeline
 - Supporting iterative refinement and connection discovery
+- Giving every file exactly one home, so the same file always lands in the same place
 
+**Never force structure prematurely.** Let connections and categories emerge from the content itself.
 
-## Methodological Foundations
+## Folder structure
 
-INMPARA builds on proven knowledge management methodologies:
+- [00-inbox](00-inbox/README.md): captured but not sorted yet
+- [01-notes](01-notes/README.md): what we wrote: atomic notes, daily logs, handbook pages, research, samples
+- [02-projects](02-projects/README.md): work that will end, one map note per project
+- [03-areas](03-areas/README.md): subjects that never end, one map note per area
+- [04-resources](04-resources/README.md): what someone else made, kept to reference
+- [05-archive](05-archive/README.md): records that arrived finished, kept as they were
+- [99-meta](99-meta/README.md): how this system works: the standard, guides, templates and examples
 
-- **GTD (Getting Things Done)** - Trusted capture system and clear next actions
-- **PARA** - Actionability-based organization adapted as folders 3-6
-- **Zettelkasten** - Atomic notes with unique identifiers and emergent linking
-- **LYT (Linking Your Thinking)** - Maps of Content and progressive connection discovery
-- **MOC (Map of Content)** - Non-hierarchical content organization through hub notes
-- **BASB (Building a Second Brain)** - CODE methodology with AI-enhanced knowledge work
+## Getting started
 
-Rather than choosing one approach, INMPARA synthesizes their strengths into a bottom-up system that lets structure emerge organically while maintaining trusted productivity workflows.
+1. Capture anything into `00-inbox/`.
+2. Daily: run the wizard in [ORGANIZE.md](99-meta/ORGANIZE.md) on each inbox item. Most become notes in `01-notes/`.
+3. Link every new note or resource from at least one area or project map.
+4. Weekly: read the maps, add links with reasons, start a project when an outcome becomes clear.
 
-*For detailed methodology explanations and integration guidance, see [Methodological Foundations](99%20-%20Meta/methodological-foundations.md)*
-
-## Workflow Overview
-
-```
-Immediate Capture → Daily Processing → Weekly Pattern Recognition → Project/Area Evolution
-```
-
-### Core Principle
-**Never force structure prematurely.** Let connections and categories emerge naturally from the content itself.
-
-## Folder Structure
-
-- **0 - Inbox**: Immediate capture of all thoughts, ideas, findings
-- **1 - Notes**: Atomic notes with unique identifiers  
-- **2 - MOCs**: Maps of Content that emerge from note clusters
-- **3 - Projects**: Actionable initiatives with clear outcomes
-- **4 - Areas**: Ongoing responsibilities and long-term interests
-- **5 - Resources**: Stable reference materials
-- **6 - Archive**: Completed or inactive items
-- **99 - Meta**: System documentation, templates, and examples
-
-## Key Features
-
-- **Bottom-Up Processing**: Structure emerges from content, not imposed upon it
-- **Semantic Linking**: Rich knowledge graph through natural connections
-- **AI-Enhanced**: Designed for integration with AI tools and automation
-- **Flexible Timing**: Regular but not rigid review cycles
-- **Cognitive Alignment**: Matches autistic information processing patterns
-
-## Getting Started
-
-1. Start capturing in `0 - Inbox` immediately
-2. Daily: Process inbox items into atomic notes in `1 - Notes`
-3. Weekly: Review notes for emerging patterns and create MOCs in `2 - MOCs`
-4. As needed: Promote clear actionables to `3 - Projects` and ongoing themes to `4 - Areas`
-
-## Documentation
-
-- [Detailed Workflow Guide](99%20-%20Meta/workflow-guide.md)
-- [Examples and Templates](99%20-%20Meta/examples/)
-- [AI Integration Guide](99%20-%20Meta/ai-integration.md)
-- [Methodological Foundations](99%20-%20Meta/methodological-foundations.md)
-- [INMPARA Formatting Standards](99%20-%20Meta/inmpara-formatting-standards.md)
+The [workflow guide](99-meta/workflow-guide.md) walks through each step, and the [templates](99-meta/templates/) give the front matter for each kind of file.
 
 ---
 
 *Built for bottom-up thinkers who need structure without rigidity.*
-
-## Folder Guides
-
-Each folder contains a detailed guide explaining its purpose, guidelines, and best practices:
-
-- [Inbox Folder Guide](0%20-%20Inbox/README%20-%20Inbox%20Folder%20Guide.md) - Immediate capture guidelines
-- [Notes Folder Guide](1%20-%20Notes/README%20-%20Notes%20Folder%20Guide.md) - Atomic note creation
-- [MOCs Folder Guide](2%20-%20MOCs/README%20-%20MOCs%20Folder%20Guide.md) - Maps of Content organization  
-- [Projects Folder Guide](3%20-%20Projects/README%20-%20Projects%20Folder%20Guide.md) - Project management
-- [Areas Folder Guide](4%20-%20Areas/README%20-%20Areas%20Folder%20Guide.md) - Ongoing responsibilities
-- [Resources Folder Guide](5%20-%20Resources/README%20-%20Resources%20Folder%20Guide.md) - Reference materials
-- [Archive Folder Guide](6%20-%20Archive/README%20-%20Archive%20Folder%20Guide.md) - Lifecycle management
-- [Meta Folder Guide](99%20-%20Meta/README%20-%20Meta%20Folder%20Guide.md) - System documentation and templates
