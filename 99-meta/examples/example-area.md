@@ -19,6 +19,10 @@ date: 2025-06-30
 
 # Cloud infrastructure
 
+Up: [Areas](README.md)
+
+**Designing, automating and running cloud infrastructure: private networking, infrastructure as code and hybrid management.**
+
 ## Purpose
 
 Keep cloud infrastructure work automated, secure and repeatable, and keep what is learned findable.
@@ -33,25 +37,6 @@ Out: application code and data platform work, which have their own areas.
 - Private endpoint DNS, automated once for every service
 - Testing infrastructure changes before they ship
 
-## Private connectivity
-
-- [Private endpoint DNS for Databricks](../01-notes/01a-atomic/private-endpoint-dns-for-databricks.md): the case that showed DNS is the hard part
-- [Private endpoint zone per service](../01-notes/01a-atomic/private-endpoint-zone-per-service.md): the general rule behind every case
-- [Private Link DNS zones](../04-resources/04p-pages/private-link-dns-zones.md): the zone name for each service
-- [Hub-and-spoke network topology](../04-resources/04p-pages/hub-and-spoke-network-topology.md): the captured post that shaped our network layout
-
-## Infrastructure as code
-
-- [Recovering corrupted Terraform state](../01-notes/01a-atomic/recovering-corrupted-terraform-state.md): how state was rebuilt by import, and why remote state with locking prevents it
-
-## Hybrid management
-
-- [Hybrid server management options](../01-notes/01a-atomic/hybrid-server-management-options.md): what managing on-premises servers from the cloud would give us
-
-## Projects
-
-None active.
-
 ## Patterns and open questions
 
 - DNS is the most complex part of every private endpoint so far.
@@ -63,16 +48,33 @@ None active.
 - A test pipeline for infrastructure changes
 - A small hybrid management pilot
 
-## Related areas
+<!-- map: start (written by org_check.py --maps-write) -->
+
+## Projects
+
+- [Private endpoint module](../02-projects/private-endpoint-module.md): finished; delivered a reusable module that creates endpoints and their DNS together
+
+## Areas
 
 - [Platform engineering](platform-engineering.md): shares the automation and self-service work
 
-## Finished
+## Atomic notes
 
-- [Private endpoint module](../02-projects/private-endpoint-module.md): delivered a reusable module that creates endpoints and their DNS together
+- [Hybrid server management options](../01-notes/01a-atomic/hybrid-server-management-options.md): what managing on-premises servers from the cloud would give us
+- [Private endpoint DNS for Databricks](../01-notes/01a-atomic/private-endpoint-dns-for-databricks.md): the case that showed DNS is the hard part
+- [Private endpoint zone per service](../01-notes/01a-atomic/private-endpoint-zone-per-service.md): the general rule behind every case
+- [Recovering corrupted Terraform state](../01-notes/01a-atomic/recovering-corrupted-terraform-state.md): how state was rebuilt by import, and why remote state with locking prevents it
+
+## Resources
+
+- [Hub-and-spoke network topology](../04-resources/04p-pages/hub-and-spoke-network-topology.md): the captured post that shaped our network layout
+- [Private Link DNS zones](../04-resources/04p-pages/private-link-dns-zones.md): the zone name for each service
+
+<!-- map: end -->
 ````
 
 What to notice:
 - The map holds no material of its own: each line is a link and a reason.
 - The notes, the captured page and the project all live in their own folders; this map is how a person finds them.
-- The finished project stays linked under Finished, and its own map says `status: replaced`.
+- The finished project stays linked under Projects, and its own map says `status: replaced`.
+- The hand sections come first, in the template's order; the link block lists each link under the folder it points to, in path order, so two agents write the same map.
