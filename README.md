@@ -2,7 +2,7 @@
 
 **I**nbox → **N**otes → **P**rojects → **A**reas → **R**esources → **A**rchive
 
-A bottom-up knowledge management system designed for autistic traits and bottom-up cognitive processing.
+A bottom-up knowledge management system for people who think from details up.
 
 Before saving, run the wizard in 99-meta/ORGANIZE.md; to find anything, follow the hub lists from here.
 

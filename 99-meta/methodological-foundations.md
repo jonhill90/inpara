@@ -98,7 +98,7 @@ Maps of content and areas do the same job, so in INPARA an area **is** its map. 
 
 **Bottom-Up First:** INPARA lets patterns emerge before categorization.
 
-**Cognitive Alignment:** Designed for bottom-up thinking patterns and autistic traits, minimizing cognitive friction.
+**Cognitive Alignment:** Designed for bottom-up thinking patterns, minimizing cognitive friction.
 
 **One home per file:** The wizard gives every file exactly one place, so two people or two agents put the same file in the same folder with the same name.
 
