@@ -11,7 +11,8 @@
 #
 # Lock file: tab-separated, one file per row, '#' starts a comment.
 #   kind  id  url  sha256  dest
-#   kind  plugin | theme | pending
+#   kind  plugin | theme | local | pending
+#   url   for local: a path inside the vault (a plugin kept in the store's own git)
 #   dest  path under .obsidian/ (plugins/<id>/main.js, themes/<name>/theme.css)
 # A 'pending' row is printed and skipped (its code has no pinned home yet).
 #
@@ -30,7 +31,7 @@ while [ $# -gt 0 ]; do
   case "$1" in
     --lock) lock="$2"; shift 2 ;;
     --force) force=1; shift ;;
-    -h|--help) sed -n '2,25p' "$0"; exit 0 ;;
+    -h|--help) sed -n '2,26p' "$0"; exit 0 ;;
     *) vault="$1"; shift ;;
   esac
 done
@@ -61,13 +62,18 @@ while IFS=$'\t' read -r kind id url want dest; do
   target="$obs/$dest"
   if [ "$force" = 0 ] && [ -f "$target" ]; then
     if [ "$(sha "$target")" = "$want" ]; then ok=$((ok + 1)); continue; fi
-    if [ "$kind" = plugin ] && [ "${dest##*/}" = main.js ]; then
+    if [ "$kind" != theme ] && [ "${dest##*/}" = main.js ]; then
       m="${dest%/main.js}/manifest.json"
       if [ -f "$obs/$m" ] && [ "$(sha "$obs/$m")" = "$(lock_sha "$m")" ]; then ok=$((ok + 1)); continue; fi
     fi
   fi
   part="$tmp/$(printf '%s' "$dest" | tr '/ ' '__')"
-  if ! curl -fsSL --retry 3 -o "$part" "$url"; then
+  if [ "$kind" = local ]; then
+    case "$url" in /*|*..*) echo "refused local path: $url" >&2; bad=$((bad + 1)); continue ;; esac
+    if ! cp "$vault/$url" "$part" 2>/dev/null; then
+      printf 'FAIL     %-28s missing %s\n' "$id" "$url" >&2; bad=$((bad + 1)); continue
+    fi
+  elif ! curl -fsSL --retry 3 -o "$part" "$url"; then
     printf 'FAIL     %-28s download %s\n' "$id" "$url" >&2; bad=$((bad + 1)); continue
   fi
   have="$(sha "$part")"
