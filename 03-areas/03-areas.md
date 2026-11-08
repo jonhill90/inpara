@@ -3,6 +3,8 @@ title: Areas
 description: Subjects that never end; each area is one map-of-content note linking the notes, resources and projects it uses.
 status: current
 date: 2025-06-08
+id: 2026110801100006
+type: hub
 ---
 
 # Areas
@@ -15,7 +17,7 @@ date: 2025-06-08
 - Links to the notes, resources and projects the area uses, each with a reason, grouped by subtopic.
 - Patterns noticed across those links, open questions, and potential projects.
 
-Everything it links lives elsewhere: our notes in `01-notes/`, captured material in `04-resources/`, work in `02-projects/`. A living page about the area, such as a catalogue or a status page, is a handbook note in `01-notes/01h-handbook/` that the map links. Start from [area-map.md](../99-meta/templates/area-map.md).
+Everything it links lives elsewhere: our notes in `01-notes/`, captured material in `04-resources/`, work in `02-projects/`. A living page about the area, such as a catalogue or a status page, is a handbook note in `01-notes/01h-handbook/` that the map links. Start from [area-map.md](../99-meta/templates/area-map.md). Each area is one row in [tags.md](../99-meta/tags.md), added in the same change as its map, and every note with that area in its `area` front matter is linked from the map.
 
 ## When to make an area
 

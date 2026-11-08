@@ -3,11 +3,13 @@ title: Example project
 description: A worked project map for a private endpoint module, from planning to its outcome, with plans kept in the project folder.
 status: current
 date: 2025-06-08
+id: 2026110801100017
+type: meta
 ---
 
 # Example project
 
-Saved as `02-projects/private-endpoint-module.md`, with its plans in `02-projects/private-endpoint-module/`. This is the map at the end of the project, after its status became `replaced`.
+Saved as `02-projects/private-endpoint-module.md`, one note with links only. Its design is a handbook page and its steps are tasks, all linked from the map. This is the map at the end of the project, after its status became `replaced`.
 
 ````markdown
 ---
@@ -15,11 +17,14 @@ title: Private endpoint module
 description: A reusable infrastructure-as-code module that creates private endpoints with their DNS zones and network links.
 status: replaced
 date: 2025-06-15
+type: project
+id: 2025061509000001
+tags: [project, 06-2025, cloud-infrastructure]
 ---
 
 # Private endpoint module
 
-Up: [Projects](README.md)
+Up: [Projects](02-projects.md)
 
 **A reusable infrastructure-as-code module that creates private endpoints with their DNS zones and network links.**
 
@@ -51,7 +56,7 @@ Manual DNS setup caused most private endpoint failures. Serves [Cloud infrastruc
 ## Outcome
 
 Delivered 2025-07-20. Starting with one service and adding the rest was the right order. Lessons became notes:
-- [Test infrastructure modules before release](../01-notes/01a-atomic/test-infrastructure-modules-before-release.md): why testing tools paid off on a module this size
+- [Test infrastructure modules before release](../01-notes/01a-atomic/2025090316200001.md): why testing tools paid off on a module this size
 
 <!-- map: start (written by org_check.py --maps-write) -->
 
@@ -59,20 +64,24 @@ Delivered 2025-07-20. Starting with one service and adding the rest was the righ
 
 - [Cloud infrastructure](../03-areas/cloud-infrastructure.md): the area this project serves
 
-## Plans
+## Handbook pages
 
-- [Module design](private-endpoint-module/module-design.md): inputs, outputs and one service at a time
-- [Progress log](private-endpoint-module/progress-log.md): dated entries from start to finish
+- [Module design](../01-notes/01h-handbook/2025061009150001.md): inputs, outputs and one service at a time
+
+## Tasks
+
+- [BL-0001: Build the module for one service](../01-notes/01t-tasks/2025061009200001.md): done; the first service end to end
+- [BL-0002: Add the remaining services](../01-notes/01t-tasks/2025061009200002.md): done; one service at a time
 
 ## Atomic notes
 
-- [Private endpoint DNS for Databricks](../01-notes/01a-atomic/private-endpoint-dns-for-databricks.md): the failure the module must prevent
-- [Private endpoint zone per service](../01-notes/01a-atomic/private-endpoint-zone-per-service.md): the rule the module encodes
-- [Test infrastructure modules before release](../01-notes/01a-atomic/test-infrastructure-modules-before-release.md): the lesson written from the outcome
+- [Private endpoint DNS for Databricks](../01-notes/01a-atomic/2025060819300001.md): the failure the module must prevent
+- [Private endpoint zone per service](../01-notes/01a-atomic/2025060819400001.md): the rule the module encodes
+- [Test infrastructure modules before release](../01-notes/01a-atomic/2025090316200001.md): the lesson written from the outcome
 
 ## Resources
 
-- [Private Link DNS zones](../04-resources/04p-pages/private-link-dns-zones.md): the zone names the module maps
+- [Private Link DNS zones](../04-resources/04c-clippings/private-link-dns-zones.md): the zone names the module maps
 
 <!-- map: end -->
 ````

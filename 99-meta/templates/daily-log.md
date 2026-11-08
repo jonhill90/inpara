@@ -1,22 +1,32 @@
 ---
-title: <What the day was about, in a few words>
+title: <Weekday, Month D, YYYY>
 description: <One line: the main work and outcome of the day>
 status: current
 date: YYYY-MM-DD
+id: <YYYYMMDDhhmmss##>
+tags: [daily, <MM-YYYY>, <YYYY-MM-DD>]
+cssclasses: [daily, <weekday>]
 ---
 
-# <What the day was about, in a few words>
+# <Weekday>
+### <MM-DD-YYYY>
 
-Save as `01-notes/01d-daily/<slug-of-title>.md`. The date lives in front matter, never in the name.
+Up: `[Day logs](01d-daily.md)` (a real link in the saved log)
 
-## Done
+Save as `01-notes/01d-daily/YYYYMMDD.md`, the date it covers in the store's local time: the one date a name may carry. A day log is mapped by its hub, so it needs no area or project map. A worklog covers one session on one subject; the day log covers the whole day and links to it. Delete this paragraph when you save.
 
-- <What was done, with links to the notes or project files it touched>
+## Journal
 
-## Learned
+- <What was done, with links to the notes, worklogs and tasks it touched>
+
+## Tasks
+
+- [ ] <Next step, or a link to the task note that holds it>
+
+## Thoughts
 
 - <Anything worth an atomic note: write that note and link it here>
 
-## Next
+## Links
 
-- [ ] <Next step, or a link to the project map that holds it>
+- [<Note or task>](<relative path>): <what happened to it today>

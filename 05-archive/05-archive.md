@@ -3,11 +3,13 @@ title: Archive
 description: Records that arrived already finished, such as old snapshots or exports, kept unchanged.
 status: current
 date: 2025-06-08
+id: 2026110801100007
+type: hub
 ---
 
 # Archive
 
-**Purpose**: things that arrive already finished or replaced and are kept only as a record, such as an old snapshot or a chat export (wizard step 2 in [ORGANIZE.md](../99-meta/ORGANIZE.md)). Each record is one folder, `05-archive/<name>/`, kept unchanged.
+**Purpose**: things that arrive already finished or replaced and are kept only as a record, such as an old snapshot (wizard step 2 in [ORGANIZE.md](../99-meta/ORGANIZE.md)). Each record is one folder, `05-archive/<name>/`, kept unchanged. Lettered sub-kind folders are added here only by a new version of the standard.
 
 ## What does not go here
 

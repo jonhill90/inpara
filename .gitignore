@@ -5,3 +5,9 @@
 .DS_Store
 __pycache__/
 .scratch
+
+# Obsidian settings stay on each machine (99-meta/obsidian-setup.md)
+.obsidian/
+
+# Originals of other people's work stay local; only their Markdown notes are in git
+.cache/
