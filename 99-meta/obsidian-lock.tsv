@@ -1,0 +1,43 @@
+# Pinned Obsidian community plugins and theme for this store, read by obsidian-setup.sh.
+# kind	id	url	sha256	dest
+# Plugin files are the GitHub release assets of the version named in the url; the
+# sha256 is of that asset as downloaded on 2026-11-08.
+plugin	obsidian-icon-folder	https://github.com/florianwoelki/obsidian-iconize/releases/download/2.14.7/main.js	ada0b009706556c98101f953a6a87f5cafd3001085df593d3be28eeeea218201	plugins/obsidian-icon-folder/main.js
+plugin	obsidian-icon-folder	https://github.com/florianwoelki/obsidian-iconize/releases/download/2.14.7/manifest.json	f524a18d69e990a244173a3595681c39a20bcbc9dc18b59af51e45660fef5ca2	plugins/obsidian-icon-folder/manifest.json
+plugin	obsidian-icon-folder	https://github.com/florianwoelki/obsidian-iconize/releases/download/2.14.7/styles.css	56ffeb8349f4af97dab8a14fcadcb0019d3b37b116d7a34aa21e958e98455a89	plugins/obsidian-icon-folder/styles.css
+plugin	dataview	https://github.com/blacksmithgu/obsidian-dataview/releases/download/0.5.68/main.js	794e9eaede73920bb8d54b0eda4f5de2182d698cc638774500f24f14bcd4da0b	plugins/dataview/main.js
+plugin	dataview	https://github.com/blacksmithgu/obsidian-dataview/releases/download/0.5.68/manifest.json	9235db47112da81b85591c79ecb9ae2574e5e72207056e976472f90616286185	plugins/dataview/manifest.json
+plugin	dataview	https://github.com/blacksmithgu/obsidian-dataview/releases/download/0.5.68/styles.css	3306dd9032e00f989ba7233a37fd255bc4d3f4340cee661762e952f3f6aa1de9	plugins/dataview/styles.css
+plugin	obsidian-tasks-plugin	https://github.com/obsidian-tasks-group/obsidian-tasks/releases/download/7.19.1/main.js	babcdfe069a57f3c99cbb1d96e3931c875370f92fc356646052835ffb093375c	plugins/obsidian-tasks-plugin/main.js
+plugin	obsidian-tasks-plugin	https://github.com/obsidian-tasks-group/obsidian-tasks/releases/download/7.19.1/manifest.json	e6639a4a681ef6aad0c4bf69cd9eefba254750b4e10b837645ead3b453c11492	plugins/obsidian-tasks-plugin/manifest.json
+plugin	obsidian-tasks-plugin	https://github.com/obsidian-tasks-group/obsidian-tasks/releases/download/7.19.1/styles.css	4d925c095f74e11b06eda80c16b1b794c68624725d68109e3bdce66731ded3af	plugins/obsidian-tasks-plugin/styles.css
+plugin	calendar	https://github.com/liamcain/obsidian-calendar-plugin/releases/download/1.5.10/main.js	7fb339e9cf9fdbe5a801fa2b8ab85b366b5b3777fbd193cbc8728bc27711d125	plugins/calendar/main.js
+plugin	calendar	https://github.com/liamcain/obsidian-calendar-plugin/releases/download/1.5.10/manifest.json	f3e9581338648512baa12d5b458490f7fd367918f7bdb6bd86171ce57be7d08b	plugins/calendar/manifest.json
+plugin	homepage	https://github.com/mirnovov/obsidian-homepage/releases/download/4.2.2/main.js	303e9188de3688e2364927b5da63aaa22969eac8a2fab470f5a1e485afac052c	plugins/homepage/main.js
+plugin	homepage	https://github.com/mirnovov/obsidian-homepage/releases/download/4.2.2/manifest.json	860bfe5bdcf115d6ccac90dbc25e64f10c18d69c0b459ac6328064d25a3b6a38	plugins/homepage/manifest.json
+plugin	homepage	https://github.com/mirnovov/obsidian-homepage/releases/download/4.2.2/styles.css	b17d097b0ab3585b6957b65c1cfe53cff7e6ff7d03d7ec178e27fa0029ddb429	plugins/homepage/styles.css
+plugin	templater-obsidian	https://github.com/silentvoid13/Templater/releases/download/2.12.1/main.js	dbfe7b5f476e8acf15b8496d9cb42b0149799abdbb9d5dd9c41a2c8c1bb43332	plugins/templater-obsidian/main.js
+plugin	templater-obsidian	https://github.com/silentvoid13/Templater/releases/download/2.12.1/manifest.json	cd4a0e23e5dd11fa51d61c2680ae428e07575ce15b0f9167500acc4c99b308af	plugins/templater-obsidian/manifest.json
+plugin	templater-obsidian	https://github.com/silentvoid13/Templater/releases/download/2.12.1/styles.css	1a0d49312cfa6566a607a1e437a572a00b1643bf443a9348d96a68d76b3d99ab	plugins/templater-obsidian/styles.css
+plugin	obsidian-kanban	https://github.com/obsidian-community/obsidian-kanban/releases/download/2.0.51/main.js	a7e3bd4cf25f9b7f53a841c44ce990db0ef5f7954ebcab17ae6dca80310c39ac	plugins/obsidian-kanban/main.js
+plugin	obsidian-kanban	https://github.com/obsidian-community/obsidian-kanban/releases/download/2.0.51/manifest.json	24976787097ead467969e014a35654e7a80e4db49a977689a48afadfa15e1854	plugins/obsidian-kanban/manifest.json
+plugin	obsidian-kanban	https://github.com/obsidian-community/obsidian-kanban/releases/download/2.0.51/styles.css	ecf6dd31f1727c441cce6f54794b0d3916dcfffc87fa17b855c79ba04a85d9a7	plugins/obsidian-kanban/styles.css
+plugin	obsidian-outliner	https://github.com/vslinko/obsidian-outliner/releases/download/4.9.0/main.js	278cd744b1205bde7afa5f9281f5a88724bf1d5757377e8e19a8b0120036576e	plugins/obsidian-outliner/main.js
+plugin	obsidian-outliner	https://github.com/vslinko/obsidian-outliner/releases/download/4.9.0/manifest.json	acf82ba7b3836115efc8e03946fa12346624abb36fcf88de4e1d7bf4af2e7287	plugins/obsidian-outliner/manifest.json
+plugin	obsidian-outliner	https://github.com/vslinko/obsidian-outliner/releases/download/4.9.0/styles.css	7922a264883894e69f22c37f549744f7d46d1de926fc802aa4e94c75cd2fbceb	plugins/obsidian-outliner/styles.css
+plugin	obsidian-excalidraw-plugin	https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/download/2.12.4/main.js	a7cb8001ff981373c265b1fdbcf71d0028ef4d03aa5d91a9017e03e64ee95bdb	plugins/obsidian-excalidraw-plugin/main.js
+plugin	obsidian-excalidraw-plugin	https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/download/2.12.4/manifest.json	4851529707a83942618e66ae8ec5945765d07bb934d0cd07913864254dc0cf4c	plugins/obsidian-excalidraw-plugin/manifest.json
+plugin	obsidian-excalidraw-plugin	https://github.com/zsviczian/obsidian-excalidraw-plugin/releases/download/2.12.4/styles.css	148a75e8826e5db65c6ec6c8edbba1731ba01a80a2c2e06e074ba1bf4434a72a	plugins/obsidian-excalidraw-plugin/styles.css
+plugin	cmdr	https://github.com/jsmorabito/obsidian-commander/releases/download/0.5.4/main.js	fa36b8a8da209216fe5db9c22005b6b4391adf30ae51bdeeb30350180fb5353b	plugins/cmdr/main.js
+plugin	cmdr	https://github.com/jsmorabito/obsidian-commander/releases/download/0.5.4/manifest.json	5f1f46e98df586cd936d1fb682434487a9e17aa2a83eb6749daca3f43d7a9236	plugins/cmdr/manifest.json
+plugin	cmdr	https://github.com/jsmorabito/obsidian-commander/releases/download/0.5.4/styles.css	7a23b5f94e87a95f21a44919646bc25ffa3dc7d2a94feb0cc68a9ca21fd17329	plugins/cmdr/styles.css
+plugin	emoji-shortcodes	https://github.com/phibr0/obsidian-emoji-shortcodes/releases/download/2.2.0/main.js	6ee802b1187c296c370bdbc51d89c31875a682c97ba8a4c7b330eb8af213fef5	plugins/emoji-shortcodes/main.js
+plugin	emoji-shortcodes	https://github.com/phibr0/obsidian-emoji-shortcodes/releases/download/2.2.0/manifest.json	ae7f4c37008f8b985edd73c16891a08c3dc27083416ce174d8585ca43f8e3893	plugins/emoji-shortcodes/manifest.json
+plugin	emoji-shortcodes	https://github.com/phibr0/obsidian-emoji-shortcodes/releases/download/2.2.0/styles.css	77ed5de086c5c542f995f6ca7e6eefed79c0fc013980b9e07dfee51f8481f5a7	plugins/emoji-shortcodes/styles.css
+plugin	obsidian-advanced-slides	https://github.com/mszturc/obsidian-advanced-slides/releases/download/1.20.0/main.js	9c42949f376520e85426f92064b89b140f75c3a6ab143742aadc26cbd714dbd1	plugins/obsidian-advanced-slides/main.js
+plugin	obsidian-advanced-slides	https://github.com/mszturc/obsidian-advanced-slides/releases/download/1.20.0/manifest.json	99ec473b4e267578feac831737f3e5a894f3faf2a38a64753740adf2c35f471c	plugins/obsidian-advanced-slides/manifest.json
+plugin	obsidian-advanced-slides	https://github.com/mszturc/obsidian-advanced-slides/releases/download/1.20.0/styles.css	3da77ff6e14e7d06941271d0e9a100907895908b1d4949173031db2da3cd5951	plugins/obsidian-advanced-slides/styles.css
+plugin	obsidian-html-plugin	https://github.com/nuthrash/obsidian-html-plugin/releases/download/1.0.20/main.js	648d7cdab825c209d13a0848747978aa2cf47bad2b17eef882c2af41da63b426	plugins/obsidian-html-plugin/main.js
+plugin	obsidian-html-plugin	https://github.com/nuthrash/obsidian-html-plugin/releases/download/1.0.20/manifest.json	2511f1e13f9b3b5b28932f04d0a51c43fb8ed2b2e1b5c908d818079e652e22df	plugins/obsidian-html-plugin/manifest.json
+theme	Vanilla AMOLED	https://raw.githubusercontent.com/sakuraisayeki/vanilla-amoled-theme/7aaa2aec0ad4ab820c23c1fc6b02aeb751c72d7f/theme.css	86516615e2c542c8858ae4b7db45344b126671a483c9d16b3847b18f4d820199	themes/Vanilla AMOLED/theme.css
+theme	Vanilla AMOLED	https://raw.githubusercontent.com/sakuraisayeki/vanilla-amoled-theme/7aaa2aec0ad4ab820c23c1fc6b02aeb751c72d7f/manifest.json	97325184cb5ed62c117b1435b72dee438b51705c2dff3e53f01b724ef73ccbfa	themes/Vanilla AMOLED/manifest.json
