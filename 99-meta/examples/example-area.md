@@ -3,6 +3,8 @@ title: Example area
 description: A worked area map for cloud infrastructure, showing how an INPARA area is its own map of content.
 status: current
 date: 2025-06-08
+id: 2026110801100016
+type: meta
 ---
 
 # Example area
@@ -15,11 +17,14 @@ title: Cloud infrastructure
 description: Designing, automating and running cloud infrastructure: private networking, infrastructure as code and hybrid management.
 status: current
 date: 2025-06-30
+type: area
+id: 2025063010000001
+tags: [moc, 06-2025]
 ---
 
 # Cloud infrastructure
 
-Up: [Areas](README.md)
+Up: [Areas](03-areas.md)
 
 **Designing, automating and running cloud infrastructure: private networking, infrastructure as code and hybrid management.**
 
@@ -60,15 +65,15 @@ Out: application code and data platform work, which have their own areas.
 
 ## Atomic notes
 
-- [Hybrid server management options](../01-notes/01a-atomic/hybrid-server-management-options.md): what managing on-premises servers from the cloud would give us
-- [Private endpoint DNS for Databricks](../01-notes/01a-atomic/private-endpoint-dns-for-databricks.md): the case that showed DNS is the hard part
-- [Private endpoint zone per service](../01-notes/01a-atomic/private-endpoint-zone-per-service.md): the general rule behind every case
-- [Recovering corrupted Terraform state](../01-notes/01a-atomic/recovering-corrupted-terraform-state.md): how state was rebuilt by import, and why remote state with locking prevents it
+- [Hybrid server management options](../01-notes/01a-atomic/2025060819500001.md): what managing on-premises servers from the cloud would give us
+- [Private endpoint DNS for Databricks](../01-notes/01a-atomic/2025060819300001.md): the case that showed DNS is the hard part
+- [Private endpoint zone per service](../01-notes/01a-atomic/2025060819400001.md): the general rule behind every case
+- [Recovering corrupted Terraform state](../01-notes/01a-atomic/2025060819450001.md): how state was rebuilt by import, and why remote state with locking prevents it
 
 ## Resources
 
-- [Hub-and-spoke network topology](../04-resources/04p-pages/hub-and-spoke-network-topology.md): the captured post that shaped our network layout
-- [Private Link DNS zones](../04-resources/04p-pages/private-link-dns-zones.md): the zone name for each service
+- [Hub-and-spoke network topology](../04-resources/04c-clippings/hub-and-spoke-network-topology.md): the captured post that shaped our network layout
+- [Private Link DNS zones](../04-resources/04c-clippings/private-link-dns-zones.md): the zone name for each service
 
 <!-- map: end -->
 ````

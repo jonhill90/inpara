@@ -1,8 +1,10 @@
 ---
 title: Meta
-description: How INPARA works: the organization standard, guides, templates and worked examples.
+description: How INPARA works: the organization standard, tags, guides, templates, worked examples and Obsidian setup.
 status: current
-date: 2025-06-08
+date: 2026-11-08
+id: 2026110801100008
+type: hub
 ---
 
 # Meta
@@ -11,7 +13,8 @@ date: 2025-06-08
 
 ## The standard
 
-- [ORGANIZE.md](ORGANIZE.md): the tree, the yes/no wizard and the naming rule that give every file exactly one place
+- [ORGANIZE.md](ORGANIZE.md): the tree, the yes/no wizard, the item shape and the naming rule that give every file exactly one place
+- [tags.md](tags.md): the fixed list of areas and topic words, and the rules that give every note its tags
 
 ## Guides
 
@@ -19,16 +22,18 @@ date: 2025-06-08
 - [inpara-formatting-standards.md](inpara-formatting-standards.md): front matter, headings and link rules for every file
 - [ai-integration.md](ai-integration.md): how agents work in the store, and the checks that keep them honest
 - [methodological-foundations.md](methodological-foundations.md): the six methods INPARA draws on and how they fit together
+- [obsidian-setup.md](obsidian-setup.md): the theme, font, settings and plugins for reading the store in Obsidian
 
 ## Templates
 
 One per kind of file:
 - [atomic-note.md](templates/atomic-note.md): one idea, under Notes, Thoughts and Links, in `01-notes/01a-atomic/`
-- [daily-log.md](templates/daily-log.md): one day's work in `01-notes/01d-daily/`
+- [daily-log.md](templates/daily-log.md): one day's work in `01-notes/01d-daily/YYYYMMDD.md`
 - [handbook-page.md](templates/handbook-page.md): a kept-current page with many ideas in `01-notes/01h-handbook/`
+- [task.md](templates/task.md): one task in `01-notes/01t-tasks/`, its state in front matter
 - [area-map.md](templates/area-map.md): an area's map of content, `03-areas/<area>.md`
 - [project-map.md](templates/project-map.md): a project's map note, `02-projects/<project>.md`
-- [resource-capture.md](templates/resource-capture.md): a captured page, document or repository in `04-resources/`
+- [resource-capture.md](templates/resource-capture.md): a clipping or resource note in `04-resources/`
 
 ## Examples
 

@@ -3,6 +3,8 @@ title: Workflow guide
 description: Step-by-step daily, weekly and monthly use of INPARA, from capture to maps, projects and finished work.
 status: current
 date: 2025-06-08
+id: 2026110801100012
+type: meta
 ---
 
 # Workflow guide
@@ -35,8 +37,9 @@ flowchart LR
 1. **Search first.** If a note on the subject exists, add to it. Never copy.
 2. **Someone else made it?** Capture it in `04-resources/`, and write your own note about it in `01-notes/`.
 3. **Your own idea?** Write an atomic note in `01-notes/01a-atomic/`: one idea, under Notes, Thoughts and Links ([template](templates/atomic-note.md)).
-4. **Name it** by the slug of its title: `private-endpoint-dns-zone.md`, never `20250608T1540-...`.
-5. **Link it** from at least one area or project map, with a reason. A note no map reaches is lost.
+4. **Name it** by its id, the moment you save it: `2026110519300001.md`. The title goes in front matter.
+5. **Tag it**: its `area` ids, and the tags the rules in [tags.md](tags.md) give.
+6. **Link it** from at least one area or project map, with a reason. A note no map reaches is lost.
 
 ## 3. Grow maps → Areas (A)
 
@@ -48,12 +51,12 @@ The area map **is** the map of content: there is no separate maps folder.
 ## 4. Start projects → Projects (P)
 
 **When**: a specific outcome or deliverable becomes clear from an area map.
-**How**: write a project map `02-projects/<project>.md` ([template](templates/project-map.md)) that links the notes and resources it uses. Plans and logs go in `02-projects/<project>/`. Anything still useful after the project ends is a note, linked from the map.
+**How**: write a project map `02-projects/<project>.md` ([template](templates/project-map.md)) that links the notes and resources it uses. The map has no folder: plans and status pages are handbook notes, and each step is a task in `01-notes/01t-tasks/` ([template](templates/task.md)), all linked from the map.
 
 ## 5. Capture references → Resources (R)
 
 **When**: you will consult something someone else made again.
-**How**: capture it in `04p-pages/`, `04d-documents/` or `04r-repos/` ([template](templates/resource-capture.md)), and link it from a map.
+**How**: clip it into its kind folder, such as `04c-clippings/`, `04r-repos/` or `04v-video/` ([template](templates/resource-capture.md)), and link it from a map. Only the Markdown goes in git; the original file stays local under `.cache/`.
 
 ## 6. Finish work → stays in place (A)
 
@@ -65,6 +68,7 @@ The area map **is** the map of content: there is no separate maps folder.
 ### Daily (5 to 10 minutes)
 - Empty the inbox with the wizard.
 - Link each new note from a map.
+- Update the state of the tasks you touched; a task never moves.
 
 ### Weekly (30 to 45 minutes)
 - Read the week's notes for patterns.
@@ -73,7 +77,7 @@ The area map **is** the map of content: there is no separate maps folder.
 
 ### Monthly (1 to 2 hours)
 - Review project maps; mark finished ones `replaced` and write their outcome.
-- Run the checks: no dead links, no orphans, no copies, every item on a map.
+- Run the checks: no dead links, no orphans, no copies, every item on a map, every note with its tags.
 
 ## Tips for success
 

@@ -3,6 +3,8 @@ title: AI integration
 description: How agents and AI tools work in an INPARA store: the wizard before saving, maps kept complete, checks in CI, and people deciding.
 status: current
 date: 2025-06-08
+id: 2026110801100013
+type: meta
 ---
 
 # AI integration
@@ -22,10 +24,12 @@ Every note and resource is reachable from some map, so a person never has to ope
 
 1. **Run the wizard before saving.** Answer the steps in [ORGANIZE.md](ORGANIZE.md) in order and take the first yes. Two agents saving the same file then pick the same folder and the same name.
 2. **Search first.** If an item on the subject exists, add to it. A copy is never a new item.
-3. **Link it.** Add one line, with a one-line summary, to the item's hub `README.md`, and one line with a reason to each area or project map that uses it.
-4. **Never rename.** Fix the title in front matter instead.
-5. **Name what you read.** When an agent answers from the store, it names the files it opened, so a person can check what the answer rests on.
-6. **Agents suggest, people decide.** Starting or ending a project, and making or splitting an area, are a person's calls.
+3. **Name it by its id, and tag it.** A note's file is `<id>.md`; its tags come from the fixed rules in [tags.md](tags.md), in front matter only.
+4. **Link it.** Add one line, with a one-line summary, to the folder's hub note `<folder>.md`, and one line with a reason to each area or project map that uses it.
+5. **Track work as tasks.** One note per task in `01-notes/01t-tasks/`, with its state in front matter.
+6. **Never rename.** Fix the title in front matter instead.
+7. **Name what you read.** When an agent answers from the store, it names the files it opened, so a person can check what the answer rests on.
+8. **Agents suggest, people decide.** Starting or ending a project, and making or splitting an area, are a person's calls.
 
 ## Integration points by stage
 
@@ -37,7 +41,7 @@ Every note and resource is reachable from some map, so a person never has to ope
 ### 01-notes: writing notes
 - Splitting a long capture into atomic notes, one idea each
 - Finding existing notes on the same subject before writing a new one
-- Filling front matter: `title`, `description`, `status`, `date`
+- Filling front matter: `title`, `description`, `status`, `date`, `id`, `type`, `area`, `tags`
 - Suggesting links, each with a reason
 
 ### 02-projects and 03-areas: maps
@@ -47,7 +51,7 @@ Every note and resource is reachable from some map, so a person never has to ope
 - Writing a project's outcome when it ends, and marking it `status: replaced`
 
 ### 04-resources: captures
-- Capturing a page, document or repository into the right lettered folder, with `source:` in front matter
+- Clipping a page, document or repository's docs into the right lettered folder, with `source:` in front matter, and keeping the original file out of git
 - Checking links in captures for rot
 
 ### 05-archive: records
@@ -66,6 +70,9 @@ Hand-kept lists go stale; checks keep them complete. CI runs the knowledge store
 | twins | two written files have the same bytes |
 | hubs | a hub leaves out a child, or a link has no description |
 | maps | a note or resource is on no area or project map |
+| folders | a folder in `01-notes/` or `04-resources/` is not a lettered kind or sub-kind folder |
+| tasks | a task note lacks `type: task`, a `label` or a known `state` |
+| tags | a note lacks its kind or month tag, or body text holds a `#tag` |
 
 ## Implementation strategies
 

@@ -16,8 +16,8 @@ jobs:
       - name: Knowledge store check
         env:
           # The checker comes from the public skills repository, pinned by commit,
-          # so a pull request here cannot edit its own checker.
-          PIN: e0bbe9a2e8addb8ac2b0fedf5a07a02921abae85
+          # so a pull request here cannot edit its own checker. It knows ORGANIZE 1.23.
+          PIN: cda0a73d3c115108dc8094b90d371ba1a5b7af43
         run: |
           curl -fsSL "https://raw.githubusercontent.com/jonhill90/skills/$PIN/skills/organize-repository/scripts/check_knowledge_store.py" \
             -o "$RUNNER_TEMP/check_knowledge_store.py"

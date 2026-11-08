@@ -3,11 +3,15 @@ title: <Name of the page>
 description: <One line: what the page keeps current, such as a vocabulary, policy or status page>
 status: current
 date: YYYY-MM-DD
+id: <YYYYMMDDhhmmss##>
+type: handbook
+area: [<area id>]
+tags: [note, handbook, <MM-YYYY>, <area id>]
 ---
 
 # <Name of the page>
 
-Save as `01-notes/01h-handbook/<slug-of-title>.md`. A handbook page holds many ideas and is kept current. If it holds only one idea, it is an atomic note.
+Save as `01-notes/01h-handbook/<id>.md`. A handbook page holds many ideas and is kept current; if it holds only one idea, it is an atomic note. Steps a person or an agent follows to do one thing are a runbook: save it in `01-notes/01h-handbook/01hr-runbooks/<id>.md` with `type: runbook` and the kind tags `note, runbook`. Delete this paragraph when you save.
 
 ## Scope
 
