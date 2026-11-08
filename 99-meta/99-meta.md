@@ -23,6 +23,8 @@ type: hub
 - [ai-integration.md](ai-integration.md): how agents work in the store, and the checks that keep them honest
 - [methodological-foundations.md](methodological-foundations.md): the six methods INPARA draws on and how they fit together
 - [obsidian-setup.md](obsidian-setup.md): the theme, font, settings and plugins for reading the store in Obsidian
+- [obsidian-setup.sh](obsidian-setup.sh): installs the community plugins and theme at pinned versions, each file checked by sha256
+- [obsidian-lock.tsv](obsidian-lock.tsv): the pinned plugin and theme files the script installs, with their sha256
 
 ## Templates
 

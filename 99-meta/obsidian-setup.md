@@ -56,7 +56,15 @@ This matches the day-log name rule (`01-notes/01d-daily/YYYYMMDD.md`).
 
 ## 6. Community plugins
 
-In **Settings → Community plugins**, turn on community plugins, then install and enable:
+[obsidian-setup.sh](obsidian-setup.sh) installs the plugins below and the Vanilla AMOLED theme at pinned versions. Run it from the store's root:
+
+```bash
+99-meta/obsidian-setup.sh
+```
+
+It downloads each file named in [obsidian-lock.tsv](obsidian-lock.tsv) (a release asset or a pinned commit) and writes it into `.obsidian/` only when its sha256 matches the lock. On a mismatch it keeps the old file and exits 1. It never changes settings, and it never starts, quits or reloads Obsidian, so reload Obsidian yourself afterwards. Running it a second time changes nothing. A store can keep a byte-identical copy of the script beside its own lock, under `99-meta/tools/`.
+
+Then, in **Settings → Community plugins**, turn on community plugins and enable:
 
 | Plugin | Used for |
 |---|---|
