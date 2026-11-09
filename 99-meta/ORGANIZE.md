@@ -212,11 +212,14 @@ some map.
   (write a literal `#` before a word as `&#35;`). `05-archive/`,
   `99-meta/` and day logs are not tagged by these rules.
 - **Tasks.** A task in `01-notes/01t-tasks/` has the same front matter as
-  every task: `type: task`, `label` (for example `BL-0001`), `state`
+  every task: `type: task`, `label` (for example `TASK-0001`),
+  `external-refs` (the same task's keys in other trackers, as
+  `<system>:<key>` strings such as `github:owner/repo#12`, or `[]`), `state`
   (`jon`, `doing`, `ready`, `blocked`, `idea`, `parked` or `done`),
   `waits-on`, `owner`, `horizon` (`Now`, `Next`, `Later`) and `source`;
   `jon` means waiting on the store's owner. A new task takes the next free
-  label.
+  label, also when it is synced in from another tracker; that tracker's
+  key goes in `external-refs`, never in `label`.
   The backlog is a state, not a folder: a task never moves when its state
   changes, so its links keep working, and the hub `01t-tasks.md` lists
   every task by state.
@@ -294,7 +297,7 @@ are complete.
 | maps | a note in `01-notes/` or `04-resources/` is on no area or project map; `02-projects/` holds a folder |
 | research | a research kind note has no `batch:`, or its batch hub does not link it |
 | shape | an area or project map differs from its template |
-| tasks | a task note lacks `type: task`, a `label` like `BL-0001`, or a `state` from the list |
+| tasks | a task note lacks `type: task`, a `label` like `TASK-0001`, or a `state` from the list |
 | tags | body text holds a `#tag`, or a note's `tags` list lacks its kind words or its month; a store with its own area and topic lists also checks those |
 
 - Captured material is skipped by the names, links and twins checks:
@@ -319,6 +322,9 @@ the rule here, and move the CI pin. To leave the standard, delete
 The rules above come from these versions of the source standard. Each was
 decided by its owner, one question at a time.
 
+- **1.26 (task part only; 1.24 and 1.25 are not copied here yet):** tasks
+  are labelled `TASK-NNNN`, and a task's keys in other trackers go in
+  `external-refs`.
 - **1.23:** tags by fixed rules in four families (kind, month, area,
   topic); no `#tags` in body text.
 - **1.22:** task management gets its own kind, `01t-tasks`, with state in

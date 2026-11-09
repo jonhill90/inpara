@@ -1,9 +1,10 @@
 ---
 id: <from the time you save it: YYYYMMDDhhmmss##>
 type: task
-title: "<BL-NNNN>: <what will be done, in a few words>"
+title: "<TASK-NNNN>: <what will be done, in a few words>"
 description: "<One line: what will be done and why>"
-label: <BL-NNNN, the next free label>
+label: <TASK-NNNN, the next free label>
+external-refs: []
 state: ready
 waits-on: []
 owner: "<who does it>"
@@ -14,7 +15,7 @@ status: current
 tags: [task, <MM-YYYY>, <area id>]
 ---
 
-# <BL-NNNN>: <what will be done, in a few words>
+# <TASK-NNNN>: <what will be done, in a few words>
 
 Up: `[Tasks](01t-tasks.md)` (a real link in the saved note)
 
