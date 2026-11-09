@@ -51,12 +51,12 @@ The area map **is** the map of content: there is no separate maps folder.
 ## 4. Start projects → Projects (P)
 
 **When**: a specific outcome or deliverable becomes clear from an area map.
-**How**: write a project map `02-projects/<project>.md` ([template](templates/project-map.md)) that links the notes and resources it uses. The map has no folder: plans and status pages are handbook notes, and each step is a task in `01-notes/01t-tasks/` ([template](templates/task.md)), all linked from the map.
+**How**: write a project map `02-projects/<project>.md` ([template](templates/project-map.md)) that links the notes and resources it uses. The map has no folder. The plan is task notes: each step is a task in `01-notes/01t-tasks/` ([template](templates/task.md)) with `plan-order`, and a status page or dashboard drawn from those fields lives in `00-inbox/00d-dashboards/`; reference pages are handbook notes, all linked from the map.
 
 ## 5. Capture references → Resources (R)
 
 **When**: you will consult something someone else made again.
-**How**: clip it into its kind folder, such as `04c-clippings/`, `04r-repos/` or `04v-video/` ([template](templates/resource-capture.md)), and link it from a map. Only the Markdown goes in git; the original file stays local under `.cache/`.
+**How**: give it one link note in its kind folder, such as `04c-clippings/`, `04d-documents/` or `04v-video/` ([template](templates/resource-capture.md)), and link it from a map. The note holds the link, never a copy; a local copy, if you need one, stays under `.cache/`. A repository gets its note in `04r-repos/` from the store's script.
 
 ## 6. Finish work → stays in place (A)
 

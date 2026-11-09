@@ -22,7 +22,8 @@ Before saving, ask: is it about this repository's system, INPARA itself, saying 
 
 - Templates and examples are about how the store works, so they live in `99-meta/`, even when they show a note, a project or an area. Files in `99-meta/` keep word names.
 - Lettered folders are flat: no item folders inside `01-notes/` or `04-resources/`, only the lettered kind and sub-kind folders the standard lists.
-- Only Markdown notes of other people's work go in git; the originals (PDFs, videos, repository copies) stay local under `.cache/`.
+- Other people's work gets one link note each in `04-resources/` (front matter with `url`, and the notes that cite it), never a copy of its text; the originals (PDFs, videos, repository copies) stay local under `.cache/`.
+- A plan is task notes with `plan-order`, never a page, and a dashboard goes in `00-inbox/00d-dashboards/`; neither goes in the handbook. Every handbook note carries `handbook-kind`.
 - Do not create a lettered folder (`01a-atomic/` and the like) until a real file goes in it. Git keeps no empty folders, and the hubs list the lettered folders in words instead.
 - Example links that point at notes which do not exist go inside code blocks or use `[[wikilinks]]`, so the link check does not count them as dead.
 - This repository is public. Write no personal or employer details, hostnames, private network names or secrets.

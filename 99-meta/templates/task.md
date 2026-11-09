@@ -10,6 +10,8 @@ waits-on: []
 owner: "<who does it>"
 horizon: "Now"
 source: "<where the task came from>"
+plan-order: <optional: a whole number, its place in the plan; delete the line if it is not on the plan>
+jon-action: "<optional: the one thing the owner must do; delete the line unless no agent can finish it>"
 area: [<area id>]
 status: current
 tags: [task, <MM-YYYY>, <area id>]
@@ -21,7 +23,7 @@ Up: `[Tasks](01t-tasks.md)` (a real link in the saved note)
 
 Save as `01-notes/01t-tasks/<id>.md`, and add one line under its state in the hub `01t-tasks.md`. Delete this paragraph when you save.
 
-`state` is one of: `jon` (waiting on the store's owner), `doing` (someone is on it), `ready` (could start now, nobody on it), `blocked` (waiting on another item, named in `waits-on`), `idea` (not a commitment), `parked` (paused by the owner) or `done` (finished, with evidence). `horizon` is `Now` (on the current path), `Next` or `Later`. When the state changes, change only the front matter and the hub line: the task never moves, so its links keep working.
+`state` is one of: `jon` (waiting on the store's owner), `doing` (someone is on it), `ready` (could start now, nobody on it), `blocked` (waiting on another item, named in `waits-on`), `idea` (not a commitment), `parked` (paused by the owner) or `done` (finished, with evidence). `horizon` is `Now` (on the current path), `Next` or `Later`. `external-refs` lists the same task's keys in other trackers as `<system>:<key>` strings, such as `github:owner/repo#12`. The plan is these fields, not a page: `plan-order` puts the task on it, `waits-on` gives its arrows and `state` its colour. When the state changes, change only the front matter and the hub line: the task never moves, so its links keep working.
 
 <What will be done, in a sentence or two.>
 

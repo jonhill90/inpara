@@ -40,12 +40,12 @@ DNS, not network topology, is the hard part of every private endpoint so far. A 
 ## Links
 
 - [Private endpoint zone per service](2025060819400001.md): the general rule this case follows
-- [Private Link DNS zones](../../04-resources/04c-clippings/private-link-dns-zones.md): the clipping with every zone name
+- [Private Link DNS zones](../../04-resources/04c-clippings/private-link-dns-zones.md): the link note for the page with every zone name
 - [Private endpoint module](../../02-projects/private-endpoint-module.md): the project this note led to
 ````
 
 What to notice:
 - One idea: why the workspace fails and what fixes it. The zone names live in a captured resource, and the general rule in its own note; both are linked, not copied.
-- The name is the id; the title, area and tags are in front matter. A clipping keeps a word name, the slug of its title.
+- The name is the id; the title, area and tags are in front matter. A resource link note keeps a word name, the slug of its title.
 - The tags follow the fixed rules: the kind word `note`, the month `06-2025`, and the area id.
 - The area map `03-areas/cloud-infrastructure.md` links this note (see [example-area.md](example-area.md)), so it is never an orphan.

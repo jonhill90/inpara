@@ -31,8 +31,8 @@ type: hub
 Run the wizard on each item. Most items become one of these:
 - an **atomic note** in `01-notes/01a-atomic/`, or a line added to a note that already exists (wizard step 0: join, never copy)
 - a **task** in `01-notes/01t-tasks/`, or a line in the day log in `01-notes/01d-daily/`
-- a **clipping** in `04-resources/04c-clippings/`, with our own note about it in `01-notes/`
-- a **plan or status page** for a project, as a handbook note linked from the project map
+- a **link note** in `04-resources/`, with our own note about the thing in `01-notes/`
+- a **plan** for a project, as task notes with `plan-order`; a **dashboard** stays in `00d-dashboards/` while it is iterated on
 - **trash**, if it no longer matters
 
 ## Lettered folders
@@ -42,6 +42,7 @@ Each is made when its first item arrives, and then gets one line in Contents bel
 | Folder | Holds |
 |---|---|
 | `00c-clippings/` | raw web captures not yet processed |
+| `00d-dashboards/` | live dashboard pages and boards still being iterated on |
 | `00e-excalidraw/` | drawings not yet sorted |
 | `00t-thoughts/` | quick ideas and to-dos |
 
