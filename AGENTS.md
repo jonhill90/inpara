@@ -14,6 +14,10 @@ The store follows `99-meta/ORGANIZE.md`.
 - Track work as tasks: one note per task in `01-notes/01t-tasks/`, its state in front matter. A task never moves when its state changes.
 - To find something, start at `README.md`, then the hub, then only the items you need. Name the files you opened.
 
+## Docs or notebook?
+
+Before saving, ask: is it about this repository's system, INPARA itself, saying why it is so, what it is, or how to use or change it? Yes: it is this repository's documentation (its rules, guides, templates and examples) and goes here by pull request. No: it is what agents learned while working on it (research, measurements, notes, thinking), and it goes in the agent notebook, `jonhill90/agent-notebook`, which may link here but never copies the rules. Source: the store test in central-hub D-0026.
+
 ## Rules an agent would get wrong from the tree alone
 
 - Templates and examples are about how the store works, so they live in `99-meta/`, even when they show a note, a project or an area. Files in `99-meta/` keep word names.
