@@ -72,7 +72,7 @@ Out: application code and data platform work, which have their own areas.
 
 ## Resources
 
-- [Hub-and-spoke network topology](../04-resources/04c-clippings/hub-and-spoke-network-topology.md): the captured post that shaped our network layout
+- [Hub-and-spoke network topology](../04-resources/04c-clippings/hub-and-spoke-network-topology.md): the post that shaped our network layout
 - [Private Link DNS zones](../04-resources/04c-clippings/private-link-dns-zones.md): the zone name for each service
 
 <!-- map: end -->

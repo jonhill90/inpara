@@ -1,6 +1,6 @@
 ---
 title: Example project
-description: A worked project map for a private endpoint module, from planning to its outcome, with plans kept in the project folder.
+description: A worked project map for a private endpoint module, from planning to its outcome, with its plan kept as task notes.
 status: current
 date: 2025-06-08
 id: 2026110801100017
@@ -9,7 +9,7 @@ type: meta
 
 # Example project
 
-Saved as `02-projects/private-endpoint-module.md`, one note with links only. Its design is a handbook page and its steps are tasks, all linked from the map. This is the map at the end of the project, after its status became `replaced`.
+Saved as `02-projects/private-endpoint-module.md`, one note with links only. Its design is a handbook page (`handbook-kind: reference`) and its steps are tasks with `plan-order`, all linked from the map. This is the map at the end of the project, after its status became `replaced`.
 
 ````markdown
 ---
@@ -88,5 +88,5 @@ Delivered 2025-07-20. Starting with one service and adding the rest was the righ
 
 What to notice:
 - The hand sections come first, in the template's order; the link block lists each link under the folder it points to, in path order, so two agents write the same map.
-- The project's own plans live in its folder; knowledge still useful after the project, like the testing lesson, became a note in `01-notes/`.
+- The project's plan lived in its task notes, as `plan-order` fields; knowledge still useful after the project, like the testing lesson, became a note in `01-notes/`.
 - The project ended without moving. Its status is `replaced`, the outcome is written in the map, and every link to it still works.

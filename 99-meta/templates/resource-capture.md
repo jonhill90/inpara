@@ -1,21 +1,21 @@
 ---
-title: <Title of the original, as its author wrote it>
-description: <One line: what the original is and why it was kept>
+title: <Name of the thing, as its author wrote it>
+description: <One line: what it is and why our notes cite it>
 status: current
 date: YYYY-MM-DD
 id: <YYYYMMDDhhmmss##>
-type: clipping
-source: <URL or where the original came from>
-was: <the original's own file name or path, if it had one>
-pin: <commit>:<path>, for a copy git once held
+type: resource
+url: <where the thing lives: its URL>
 area: [<area id>]
-tags: [resource, clippings, <MM-YYYY>, <area id>]
+tags: [resource, <kind word>, <MM-YYYY>, <area id>]
 ---
 
-# <Title of the original>
+# <Name of the thing>
 
-A clipping is one doc's text as Markdown. Save it in its kind folder, flat, with no resource subfolders: `04-resources/04c-clippings/` for a web page or a document's text, `04r-repos/` for a repository's README or docs, `04l-learning/` for a course, `04v-video/` for a video's transcript, or `04h-harness/04hp-prompts/` for an exported agent chat thread. Name it by the slug of its title. Change the kind tag to the folder's word (`repo`, `course`, `video`, `harness`).
+<url>
 
-A resource with more than one doc gets one resource note `<resource>.md` in the same folder that links its clippings; a paper or document gets its resource note in `04d-documents/`. Only Markdown is in git: a PDF, video, repository copy, raw page or scraped dump stays local under `.cache/`, and the resource note records its source, the date, and each file's size and sha256. Delete these two paragraphs when you save.
+A resource note is a link note: front matter, the link, and the list of our notes that cite it. It never holds a copy of the thing. Save it flat in its kind folder: `04-resources/04d-documents/` for a paper or document, `04c-clippings/` for a web page, `04l-learning/` for a course, `04v-video/` for a video, or `04h-harness/04hp-prompts/` for exported agent chat threads, named by the slug of its title. Set the kind word in `tags` to the folder's word (`document`, `clippings`, `course`, `video`, `harness`). A repository gets its note in `04r-repos/`, `<owner>-<repo>.md`, made by the store's script from the notes that cite it, not by hand. The text, PDF, video or repository is not kept in git: read it at its URL, or keep a local copy under `.cache/`, which git ignores. Delete this paragraph when you save.
 
-<The captured text, unchanged. Our own notes about it go in `01-notes/` and link here.>
+## Cited by
+
+- [<Our note that cites it>](<relative path>): <what it uses from it>

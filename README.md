@@ -27,7 +27,7 @@ INPARA is engineered to match natural thinking patterns by:
 - [01-notes](01-notes/01-notes.md): what we wrote: atomic notes, day logs, handbook pages, runbooks, incidents, meetings, research, samples, tasks and worklogs
 - [02-projects](02-projects/02-projects.md): work that will end, one map note per project
 - [03-areas](03-areas/03-areas.md): subjects that never end, one map note per area
-- [04-resources](04-resources/04-resources.md): what someone else made, kept to reference: clippings, documents, harness material, courses, repository docs and videos
+- [04-resources](04-resources/04-resources.md): what someone else made, one link note each: web pages, documents, harness material, courses, repositories and videos
 - [05-archive](05-archive/05-archive.md): records that arrived finished, kept as they were
 - [99-meta](99-meta/99-meta.md): how this system works: the standard, tags, guides, templates, examples and Obsidian setup
 

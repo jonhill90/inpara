@@ -31,11 +31,11 @@ type: hub
 One per kind of file:
 - [atomic-note.md](templates/atomic-note.md): one idea, under Notes, Thoughts and Links, in `01-notes/01a-atomic/`
 - [daily-log.md](templates/daily-log.md): one day's work in `01-notes/01d-daily/YYYYMMDD.md`
-- [handbook-page.md](templates/handbook-page.md): a kept-current page with many ideas in `01-notes/01h-handbook/`
+- [handbook-page.md](templates/handbook-page.md): a kept-current reference page with many ideas and its `handbook-kind` in `01-notes/01h-handbook/`
 - [task.md](templates/task.md): one task in `01-notes/01t-tasks/`, its state in front matter
 - [area-map.md](templates/area-map.md): an area's map of content, `03-areas/<area>.md`
 - [project-map.md](templates/project-map.md): a project's map note, `02-projects/<project>.md`
-- [resource-capture.md](templates/resource-capture.md): a clipping or resource note in `04-resources/`
+- [resource-capture.md](templates/resource-capture.md): a link note for something someone else made, in `04-resources/`
 
 ## Examples
 

@@ -34,9 +34,9 @@ Each capture goes through the wizard in [ORGANIZE.md](../ORGANIZE.md), first yes
 | "Private endpoint not accessible" | 0: same subject as the note above | added to that note, not a new file |
 | Terraform state corruption | 6: one idea | `01-notes/01a-atomic/2025060819450001.md` |
 | Hybrid server management | 6: one idea | `01-notes/01a-atomic/2025060819500001.md` |
-| Hub-and-spoke blog post | 3: someone else made it | `04-resources/04c-clippings/hub-and-spoke-network-topology.md`, plus a line in a note about why it matters |
+| Hub-and-spoke blog post | 3: someone else made it | `04-resources/04c-clippings/hub-and-spoke-network-topology.md`, a link note, plus a line in a note about why it matters |
 
-Each note is named by its id, the moment it was saved; its title sits in front matter. The clipping keeps a word name.
+Each note is named by its id, the moment it was saved; its title sits in front matter. The resource link note keeps a word name.
 
 ## Week 1: the area map appears
 
@@ -46,11 +46,11 @@ The area and its map of content are the same note.
 
 ## Week 2: a project emerges
 
-The map's pattern points at a clear outcome: automate private endpoint DNS once. That becomes `02-projects/private-endpoint-module.md` ([example](example-project.md)), a map note linking the notes and the clipped zone page it uses. Its design is a handbook page in `01-notes/01h-handbook/`, and each step is a task in `01-notes/01t-tasks/` whose state changes as work moves; the map links them all. The area map links the project.
+The map's pattern points at a clear outcome: automate private endpoint DNS once. That becomes `02-projects/private-endpoint-module.md` ([example](example-project.md)), a map note linking the notes and the zone page it uses. Its design is a handbook page in `01-notes/01h-handbook/` (`handbook-kind: reference`), and each step is a task in `01-notes/01t-tasks/` with `plan-order`, whose state changes as work moves; the map links them all. The area map links the project.
 
 ## Month 2: resources grow
 
-Building the module, you consult the official list of Private Link DNS zones again and again. It is clipped as `04-resources/04c-clippings/private-link-dns-zones.md` with `source:` in its front matter, and linked from the area map and the project map. Your own notes about it stay in `01-notes/`.
+Building the module, you consult the official list of Private Link DNS zones again and again. It gets a link note, `04-resources/04c-clippings/private-link-dns-zones.md`, with `url:` in its front matter and no copy of the list, and linked from the area map and the project map. Your own notes about it stay in `01-notes/`.
 
 ## Month 3: the project finishes
 
@@ -66,7 +66,7 @@ No link broke, and git keeps every earlier version.
 
 - 15 atomic notes, each one idea, each on at least one map
 - 1 area map that a person browses instead of the folders
-- 1 finished project and 1 started, each a map note with its plans beside it
+- 1 finished project and 1 started, each a map note linking the tasks that hold its plan
 - 5 captured pages, separate from the notes about them
 - 0 renames, 0 moves, 0 copies
 
