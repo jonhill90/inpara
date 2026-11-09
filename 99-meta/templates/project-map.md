@@ -52,7 +52,7 @@ Save as `02-projects/<slug-of-title>.md`: one note with links only, and no folde
 
 ## Tasks
 
-- [<BL-NNNN: task>](../01-notes/01t-tasks/<id>.md): <what it delivers>
+- [<TASK-NNNN: task>](../01-notes/01t-tasks/<id>.md): <what it delivers>
 
 ## Atomic notes
 

@@ -70,8 +70,8 @@ Delivered 2025-07-20. Starting with one service and adding the rest was the righ
 
 ## Tasks
 
-- [BL-0001: Build the module for one service](../01-notes/01t-tasks/2025061009200001.md): done; the first service end to end
-- [BL-0002: Add the remaining services](../01-notes/01t-tasks/2025061009200002.md): done; one service at a time
+- [TASK-0001: Build the module for one service](../01-notes/01t-tasks/2025061009200001.md): done; the first service end to end
+- [TASK-0002: Add the remaining services](../01-notes/01t-tasks/2025061009200002.md): done; one service at a time
 
 ## Atomic notes
 
