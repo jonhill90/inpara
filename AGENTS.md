@@ -16,7 +16,7 @@ The store follows `99-meta/ORGANIZE.md`.
 
 ## Docs or notebook?
 
-Before saving, ask: is it about this repository's system, INPARA itself, saying why it is so, what it is, or how to use or change it? Yes: it is this repository's documentation (its rules, guides, templates and examples) and goes here by pull request. No: it is what agents learned while working on it (research, measurements, notes, thinking), and it goes in the agent notebook, `jonhill90/agent-notebook`, which may link here but never copies the rules. Source: the store test in central-hub D-0026.
+Before saving, ask: is it about this repository's system, INPARA itself, saying why it is so, what it is, or how to use or change it? Yes: it is this repository's documentation (its rules, guides, templates and examples) and goes here by pull request. No, or still working material: it is what agents learned while working on it (research, measurements, notes, thinking), and it goes in the agent notebook, `jonhill90/agent-notebook`, which may link here but never copies the rules. This repository holds the public, polished version: once a finding about INPARA is measured or sourced, it becomes part of the rules, guides or examples here by a pull request the owner sees, and it carries its own sources. Nothing here links into the notebook, which is private. Source: the store test in central-hub D-0026.
 
 ## Rules an agent would get wrong from the tree alone
 

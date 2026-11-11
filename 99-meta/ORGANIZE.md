@@ -17,8 +17,7 @@ that knows the new rule (see [Checks](#5-checks)).
 Read this before saving notes, research, resources, tasks or other
 learning material, or when setting up or reorganizing a place that holds
 them. A **store** is any folder that keeps knowledge: a knowledge
-repository's root, a code repository's `docs/knowledge/`, or a project's
-shared files folder. When two agents run this on the same file, they get
+repository's root or a project's shared files folder. When two agents run this on the same file, they get
 the same folder and the same name.
 
 ## Contents
@@ -39,12 +38,14 @@ Ask first: is the file about this repository's own system, saying why it
 is so, what it is, or how to run or change it?
 
 - **Yes:** it is documentation. It goes in the repository's `docs/` kind
-  folders (`decisions/`, `runbooks/`, `specs/` and the like), which have
-  their own layout by kind of document. This standard does not place files
-  there.
-- **No:** it is knowledge, something learned or gathered. It goes in the
-  knowledge store, and the wizard below places it. In a code repository
-  the knowledge store is `docs/knowledge/`.
+  folders (`decisions/`, `runbooks/`, `specs/`, `explanations/` and the
+  like), which have their own layout by kind of document. This standard
+  does not place files there. That includes the polished version of what
+  was learned about the system, once it is measured or sourced.
+- **No, or still working material:** it is knowledge, something learned or
+  gathered. It goes in the knowledge store, and the wizard below places
+  it. A code repository keeps no knowledge store of its own, and its pages
+  never link into one that is private.
 
 A docs folder that holds the evidence behind decisions is named
 `evidence/`. Keep the word "research" for the knowledge store, so a folder
@@ -338,6 +339,10 @@ the rule here, and move the CI pin. To leave the standard, delete
 The rules above come from these versions of the source standard. Each was
 decided by its owner, one question at a time.
 
+- **1.34, step 0 only (the rest of this copy is still 1.27):** a code
+  repository keeps no knowledge store of its own. The polished version of
+  a proven finding about its system is documentation in its `docs/` kind
+  folders, and its pages never link into a private store.
 - **1.27:** the handbook is reference only, and each of its notes names
   its `handbook-kind`; a plan is task notes with `plan-order`, drawn by a
   dashboard, never a page; a dashboard or a page being styled lives in
