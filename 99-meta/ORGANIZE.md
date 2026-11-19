@@ -2,15 +2,15 @@
 title: INPARA organization standard
 description: The tree, the yes/no wizard, the item shape and the naming rule that give every file in an INPARA store exactly one place.
 status: current
-version: 1.27
-date: 2026-11-09
+version: 1.38
+date: 2026-11-19
 id: 2026110801100001
 type: meta
 ---
 
 # INPARA organization standard
 
-Version 1.27. This is the public copy of the source organization standard.
+Version 1.38. This is the public copy of the source organization standard.
 A rule changes there first, then here, and the CI pin moves to a checker
 that knows the new rule (see [Checks](#5-checks)).
 
@@ -82,7 +82,8 @@ name never answers yes to both sides of the question above.
 │   └── 01w-worklogs/    one work session on one subject: what was done, files changed
 ├── 02-projects/       work that will end: one map note per project, <project>.md, links only
 ├── 03-areas/          subjects that never end: one map-of-content note per area, <area>.md
-├── 04-resources/      someone else made it; we keep it to reference
+├── 04-resources/      someone else made it; we keep it to reference (04a-assets: the files we made that notes cite)
+│   ├── 04a-assets/      files we made that notes cite: 04ad-data, 04ai-images, 04ap-pages, 04as-scripts
 │   ├── 04c-clippings/   web pages made by someone else: one link note each, no copied text
 │   ├── 04d-documents/   papers and documents: one link note each, the file not kept
 │   ├── 04h-harness/     agent harness material: 04hp-prompts/ for exported chat threads
@@ -102,12 +103,14 @@ name never answers yes to both sides of the question above.
   kind that exists. The word is the standard term where one exists. A
   retired letter is never reused, so an old link never points to the
   wrong kind.
-- **Files we made that are not notes** sit in lettered sub-kinds of the
-  kind folder whose notes cite them: the kind's letters, then `d` for
-  `data`, `s` for `scripts`, `i` for `images` (.svg, .png, .webp) or `p`
-  for `pages` (.html we made). For example `01-notes/01h-handbook/01hd-data/`
-  or `01-notes/01r-research/01re-evidence/01res-scripts/`. These four are
-  the only non-note folder words in `01-notes/`.
+- **Files we made that are not notes** (data, images, `.html` pages and
+  scripts) sit in `04-resources/04a-assets/`, in its four sub-kind
+  folders: `04ad-data`, `04ai-images`, `04ap-pages` and `04as-scripts`.
+  The note that cites a file links it. `01-notes/` holds notes only, and
+  only the hub `04a-assets.md` may sit directly in `04a-assets/`.
+- **A note belongs to a project.** A note's `project:` names a project
+  map, `02-projects/<project>.md`; a task, incident or worklog note always
+  has one.
 - A new lettered folder is added only by a new version of this standard,
   never by an agent saving a file. Each folder is made when its first file
   arrives.
@@ -131,19 +134,19 @@ flowchart TD
   Q4 -->|"no"| Q5{"5. Is it the hub page of a subject that never ends?"}
   Q5 -->|"yes"| AA["03-areas/area.md, one map note"]
   Q5 -->|"no"| Q6{"6. Did we write it and know what it is?"}
-  Q6 -->|"yes"| NO["01-notes/: 01r research, 01s sample, 01d day log, 01m meeting, 01w work session, 01i incident, 01t task, 01hr runbook, 01h reference page, else 01a one idea"]
+  Q6 -->|"yes"| NO["01-notes/: 01r research, 01s sample, 01d day log, 01m meeting, 01w work session, 01i incident, 01t task, 01hr runbook, 01h reference page, else 01a one idea. A data file, image, page or script we made that a note cites: 04-resources/04a-assets/ in 04ad-data, 04ai-images, 04ap-pages or 04as-scripts"]
   Q6 -->|"no"| IN["00-inbox/, sorted later by this same wizard"]
 ```
 
 | # | Question | If yes | Test for the hard cases |
 |---|---|---|---|
 | 0 | Is there already an item on this subject? Read the hub lists from `README.md` down, and search the names and titles. | Join it. | A copy of an item is never a new item. |
-| 1 | Is it about how this store works: its rules, checks, tools, templates or setup? | `99-meta/` | A tool that serves one note sits in the scripts sub-kind of that note's kind folder. A page on how we work in general (a vocabulary, tool choice, review rules) is a handbook page (step 6). |
+| 1 | Is it about how this store works: its rules, checks, tools, templates or setup? | `99-meta/` | A script that serves one note is a file we made: it sits in `04-resources/04a-assets/04as-scripts/`, and the note links it. A page on how we work in general (a vocabulary, tool choice, review rules) is a handbook page (step 6). |
 | 2 | Does it arrive already finished or replaced, kept only as a record (an old snapshot)? | `05-archive/<project or subject>/`, unchanged, the folder named by a word already in this standard, with a README that lists every file | An item that is already saved and later finishes **stays where it is**: set `status: replaced` in its front matter, so its links keep working. Only something retired as a whole record goes to the archive. |
-| 3 | Did someone else make it? | `04-resources/<kind>/`, flat, one **link note** per thing and never a copy of its text: `04r-repos/` one note per repository our notes cite, `<owner>-<repo>.md`, made and removed by a script from the repositories the notes cite; `04d-documents/` a paper or document; `04c-clippings/` a web page; `04h-harness/04hp-prompts/` exported agent chat threads; `04l-learning/` a course; `04v-video/` a video | A link note holds `id`, `title`, `description` and `url` in front matter, and the list of notes that cite it; nothing else. The text, PDF, video or repository it points to is not kept in git: read it at its URL, or keep a local copy under `.cache/`, which git ignores. A note that cites a repository carries a `repos:` front matter list naming its repo notes, written by the same script. Our notes about a resource are not a resource: they go to step 6 and link to it. |
+| 3 | Did someone else make it? | `04-resources/<kind>/`, flat, one **link note** per thing and never a copy of its text: `04r-repos/` one note per repository our notes cite, `<owner>-<repo>.md`, made and removed by a script from the repositories the notes cite; `04d-documents/` a paper or document; `04c-clippings/` a web page; `04h-harness/04hp-prompts/` exported agent chat threads; `04l-learning/` a course; `04v-video/` a video | A link note holds `id`, `title`, `description` and `url` in front matter, and the list of notes that cite it; nothing else. The text, PDF, video or repository it points to is not kept in git: read it at its URL, or keep a local copy under `.cache/`, which git ignores. A note that cites a repository carries a `repos:` front matter list naming its repo notes, written by the same script. The files we made that notes cite are not resources either: they go to step 6 and `04-resources/04a-assets/`. Our notes about a resource are not a resource: they go to step 6 and link to it. |
 | 4 | Is it the plan, status or log of one piece of work that will end? | A plan is task notes, not a page: one note per step in `01-notes/01t-tasks/` with `plan-order`, `waits-on`, `state` and `owner`. A status picture or dashboard is a page in `00-inbox/00d-dashboards/`, drawn from the notes' fields. Anything else is a note of the kind it is, linked from the project's map note `02-projects/<project>.md`: a runbook or reference page kept current in `01-notes/01h-handbook/`; a note on one idea in `01-notes/01a-atomic/`; a review, audit, draft or dated snapshot kept only as a record in `05-archive/` (step 2) | The map note is to a project what an area map is to an area: links only, each with a reason, and no folder. There is no plans folder, and a plan or dashboard never goes in the handbook. |
 | 5 | Is it the hub page of a subject that never ends? | `03-areas/<area>.md`, one map-of-content note with no folder | The map is a list of links, each with a reason. Everything it links lives elsewhere. A living page about the area, such as a catalogue or a status page, is a handbook note that the map links. |
-| 6 | Did we write it, and do we know what it is? | `01-notes/`: `01r-research/` for a registered research batch (below); `01s-samples/` for code built as an example; `01d-daily/` for a log of one day; `01m-meetings/` for one meeting; `01w-worklogs/` for one work session on one subject; `01i-incidents/` for one problem, its root cause and its fix; `01t-tasks/` for one task; `01h-handbook/01hr-runbooks/` for steps a person or agent follows to do one thing; `01h-handbook/` for a reference page we keep current that holds many ideas, with `handbook-kind:` set to `vocabulary`, `policy`, `profile`, `catalogue`, `how-we-work` or `reference` (never a plan, a dashboard or anything being styled; a note that fits none of the kinds is not a handbook note); otherwise `01a-atomic/`, one idea per note | Research means a question answered from sources, saved as a batch with a number in the batch register `99-meta/batches.md` (new research takes the next free number before it is saved). Its hub is `01rb-batches/NNNN-<name>.md`; every other note of the batch sits flat in the folder of its kind (`01rp`, `01re`, `01rl`, `01rc`, `01rs`, `01rd`, or `01ra` when it fits none of the six), with `batch: NNNN-<name>` in its front matter and a link from the batch hub. A plan, review or status page for one project is step 4, not research. A reference page we keep editing that holds many ideas is a handbook page; a note on one idea is atomic even when edited later. A worklog covers one session; the day log covers the whole day and links to it. An option comparison is research; a how-to is a runbook. |
+| 6 | Did we write it, and do we know what it is? | `01-notes/`: `01r-research/` for a registered research batch (below); `01s-samples/` for code built as an example; `01d-daily/` for a log of one day; `01m-meetings/` for one meeting; `01w-worklogs/` for one work session on one subject; `01i-incidents/` for one problem, its root cause and its fix; `01t-tasks/` for one task; `01h-handbook/01hr-runbooks/` for steps a person or agent follows to do one thing; `01h-handbook/` for a reference page we keep current that holds many ideas, with `handbook-kind:` set to `vocabulary`, `policy`, `profile`, `catalogue`, `how-we-work` or `reference` (never a plan, a dashboard or anything being styled; a note that fits none of the kinds is not a handbook note); otherwise `01a-atomic/`, one idea per note. A data file, image, page or script we made that a note cites is not a note: it goes in `04-resources/04a-assets/`, in `04ad-data`, `04ai-images`, `04ap-pages` or `04as-scripts`, and the note that cites it links it | Research means a question answered from sources, saved as a batch with a number in the batch register `99-meta/batches.md` (new research takes the next free number before it is saved). Its hub is `01rb-batches/NNNN-<name>.md`; every other note of the batch sits flat in the folder of its kind (`01rp`, `01re`, `01rl`, `01rc`, `01rs`, `01rd`, or `01ra` when it fits none of the six), with `batch: NNNN-<name>` in its front matter and a link from the batch hub. A plan, review or status page for one project is step 4, not research. A reference page we keep editing that holds many ideas is a handbook page; a note on one idea is atomic even when edited later. A worklog covers one session; the day log covers the whole day and links to it. An option comparison is research; a how-to is a runbook. |
 | - | None of the above | `00-inbox/` | Sorted later with this same wizard. |
 
 **Tie rule:** if two answers still fit, pick the one a stranger would look
@@ -158,9 +161,8 @@ some map.
 - **Lettered folders are flat:** top folder, lettered folder, file. In
   `01-notes/` and `04-resources/` the only folders are the lettered kind
   folders, their sub-kinds (`01hr-runbooks`, `01ra` to `01rs`,
-  `04hp-prompts`) and the non-note sub-kinds (`data`, `scripts`, `images`,
-  `pages`) above. A note never holds folders; a batch hub links its
-  notes.
+  `04hp-prompts`) and the four sub-kinds of `04a-assets` above. A note
+  never holds folders; a batch hub links its notes.
 - **Hub notes.** The root hub is `README.md`. Below the root, a folder's
   hub is its **folder note** `<folder>/<folder>.md`, for example
   `01-notes/01-notes.md`, so no two hubs share a name.
@@ -308,13 +310,14 @@ are complete.
 | links | a relative Markdown link points to nothing |
 | orphans | no chain of links from `README.md` reaches a file |
 | twins | two written Markdown notes have the same bytes |
-| folders | a folder inside `01-notes/` or `04-resources/` is not a lettered kind, sub-kind or non-note sub-kind folder |
+| folders | a folder inside `01-notes/` or `04-resources/` is not a lettered kind, a sub-kind, or one of the four sub-kinds of `04a-assets/`; a data, scripts, images or pages folder inside `01-notes/`; a file directly in `04a-assets/` other than its hub `04a-assets.md` |
 | hubs | a hub does not link one of its children, or a link line has no description |
 | maps | a note in `01-notes/` or `04-resources/` is on no area or project map (a repo note in `04r-repos/` is exempt); `02-projects/` holds a folder |
 | research | a research kind note has no `batch:`, or its batch hub does not link it |
 | shape | an area or project map differs from its template |
 | tasks | a task note lacks `type: task`, a `label` `TASK-NNNN`, an `external-refs` list of `<system>:<key>` strings (`[]` when none), or a `state` from the list |
 | handbook | a note directly in `01-notes/01h-handbook/` (not its hub or `01hr-runbooks/`) has no `handbook-kind:` from the list |
+| projects | a note in `01-notes/` has a `project:` that names no `02-projects/<project>.md`, or a task, incident or worklog note has none |
 | tags | body text holds a `#tag`, or a note's `tags` list lacks its kind words or its month; a store with its own area and topic lists also checks those |
 
 - Captured material is skipped by the names, links and twins checks:
@@ -339,10 +342,17 @@ the rule here, and move the CI pin. To leave the standard, delete
 The rules above come from these versions of the source standard. Each was
 decided by its owner, one question at a time.
 
-- **1.34, step 0 only (the rest of this copy is still 1.27):** a code
-  repository keeps no knowledge store of its own. The polished version of
-  a proven finding about its system is documentation in its `docs/` kind
-  folders, and its pages never link into a private store.
+- **1.38:** a note's `project:` names a project map, and a task,
+  incident or worklog note always has one (the `projects` check).
+- **1.37 and 1.36:** the files we made that are not notes move into
+  `04-resources/04a-assets/`, in `04ad-data`, `04ai-images`, `04ap-pages`
+  and `04as-scripts`; `01-notes/` holds notes only. Only the hub
+  `04a-assets.md` may sit directly in `04a-assets/`.
+- **1.34:** a code repository keeps no knowledge store of its own. The
+  polished version of a proven finding about its system is documentation
+  in its `docs/` kind folders, and its pages never link into a private
+  store. (Versions 1.28 to 1.33 and 1.35 are rules of the source store
+  only and are not copied here.)
 - **1.27:** the handbook is reference only, and each of its notes names
   its `handbook-kind`; a plan is task notes with `plan-order`, drawn by a
   dashboard, never a page; a dashboard or a page being styled lives in
